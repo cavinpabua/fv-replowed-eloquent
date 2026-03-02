@@ -1,0 +1,94 @@
+div.ingame_surveys_container {
+    width:100%;
+    height:0px;
+    margin:0 auto;
+    text-align:left;
+    display: none;
+}
+
+div.igs_window {
+    border: 1px black solid;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius:8px 8px 8px 8px;
+    border-color:#CCCCCC;
+    background-color:#FFFFFF;
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    padding:10px;
+    width:760px;
+    height:365px;
+    position: absolute;
+    z-index:2;
+}
+
+div.igs_header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 229px;
+    height: 32px;
+}
+
+div.igs_intro {
+    font-family:verdana,arial,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    color:#777;
+}
+
+div.igs_questions_container {
+    height:220px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top:10px;
+}
+
+div.igs_submit {
+    margin:5px auto;
+    text-align: center;
+}
+
+div.igs_bt_close {
+    width:23px;
+    height:23px;
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+table.igs_questions_table {
+    height:220px;
+    width:760px;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+
+table.igs_questions_table th, table.igs_questions_table td {
+    border:1px solid #CCCCCC;
+    vertical-align:middle;
+    text-align:center;
+    font-family:verdana,arial,sans-serif;
+}
+
+table.igs_questions_table th {
+    font-size:11px;
+    font-weight:bold;
+    color:#999;
+}
+
+table.igs_questions_table td {
+    font-size:13px;
+    font-weight:normal;
+    color:#000;
+    padding:5px;
+}
+
+table.igs_questions_table td.igs_td_first {
+    text-align:left;
+}
+
+table.igs_questions_table tr.igs_tr_alt {
+    background-color:#EEEEEE;
+}

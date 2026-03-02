@@ -1,0 +1,769 @@
+<?php
+require_once AMFPHP_ROOTPATH . "Helpers/database.php";
+require_once AMFPHP_ROOTPATH . "Helpers/general_functions.php";
+require_once AMFPHP_ROOTPATH . "Helpers/crafting_helper.php";
+require_once AMFPHP_ROOTPATH . "Helpers/constants.php";
+require_once AMFPHP_ROOTPATH . "Helpers/quest_helper.php";
+require_once AMFPHP_ROOTPATH . "Helpers/collision.php";
+
+use App\Models\UserMeta;
+use App\Models\UserAvatar;
+use App\Models\UserWorld;
+use App\Models\User;
+use App\Models\PlayerMeta;
+
+class Player {
+
+    private $uid = null;
+    private $pData = array();
+    private $worldData = array();
+    private $avatarData = array();
+    private $db = null;
+
+    public function __construct($id) {
+        global $db;
+        $this->uid = $id;
+        $this->db = $db;
+    }
+
+    public function getUid(){
+        return $this->uid;
+    }
+
+    public function getData($requ) {
+        $userMeta = UserMeta::where('uid', $this->uid)->first();
+
+        if ($userMeta === null) {
+            return null;
+        }
+
+        $row = $userMeta->toArray();
+
+        $currentWorldType = get_meta($this->uid, "currentWorldType") ?: "farm";
+        $currentWorld = getWorldByType($this->uid, $currentWorldType);
+        $masteryClientData = getMasteryForClient($this->uid);
+
+        $this->pData = array(
+            "sequenceNumber" => $requ->sequence,
+            "sequenceId" => 1483867184,
+
+            "crossPromos" => null,
+            "flashHotParams" => array(
+                "STAT_SAMPLE_ZLOC_FAIL" => 10,
+                "ZYNGA_USER_ID" => $this->uid,
+                "ZRUNTIME_KEY_HIDE_STATS_HUD" => false,
+                "SKIP_NEW_CMS_MODULES" => false,
+                "BINGO" => '{"CADENCENAME": "bingo","START_DATE": "05/13/2013","END_DATE": "05/30/2013","PREVIOUS_END_DATE": "05/30/2013","TITLE": "FARM BINGO","WINDOW_BACKGROUND": "assets/dialogs/FV_Support/FV_Bingo/Bingo_bg_default.png","MOTD": "assets/dialogs/FV_motd_Bingo.swf","BUY_RANDOM_PRICE": 2,"BUY_SPECIFIC_PRICE": 5,"COOLDOWN_HOURS": 6,"AUTOPOP_HOURS": 10,"PRIZES": "saddleshoetree,atthehop,sheep_thickglasses,cow_designersuit,pegacorn_poodleskirt","CARD_NUMBERS": "14,8,2,5,11,25,17,30,26,19,44,42,37,39,57,53,48,60,58,63,74,72,66,61","CARD_NUMBERS_NOT_SELECTED": "1,3,4,6,7,9,10,12,13,15,16,18,20,21,22,23,24,27,28,29,31,32,33,34,35,36,38,40,41,43,45,46,47,49,50,51,52,54,55,56,59,62,64,65,67,68,69,70,71,73,75"}',
+                "REALITEMNAME_ENABLED" => true,
+                "MARKET_REPOP_BLACKLIST" => "",
+                "LONELY_ANIMAL_CREW_ITEM" => "horse_xhf_octoberfestival"
+            ),
+            "wishData" => array(
+                "wishSenders" => null,
+                "wishRewardLink" => null,
+                "wishName" => null,
+                "wishImage" => null
+            ),
+            "energy" => $row['energy'],
+            "locale" => "en_US",
+            "witherOn" => buildWitherOnObject($this->uid),
+            "isFarmvilleFan" => false,
+            "fanPageStatuses" => array(),
+            "subscriptionStatus" => "",
+            "promos" => array(),
+            "socialActions" => null,
+            "snExtendedPermissions" => [
+                "publish_actions",
+                "user_games_activity",
+                "friends_games_activity",
+                "publish_actions",
+                "user_birthday",
+                "read_stream",
+                "user_friends",
+                "extended_permissions_gift_given"
+            ],
+            "systemNotifications" => true,
+            "dynamicSystemNotifications" => true,
+            "hasValidUnwitherClock" => isWitherProtectionActive($this->uid, $currentWorldType) ? 1 : 0,
+            "errorPopupEnabled" => 1,
+            "suppressDialogs" => false,
+            "qaPopupBlock" => false,
+            "neighbors" => compressArray($this->getCurrentNeighbors()),
+            "npcs" => array(),
+            "pendingPresents" => array(),
+            "bumperCropPaid" => 0,
+            "firstDay" => false,
+            "friendUnwithered" => 0,
+            "geoip" => null,
+            "purchaseHistory" => array(),
+            "experiments" => config('experiments'),
+            "userLocale" => "en_US",
+            "req_initUserStartTimestamp" => time(),
+            "world" => $currentWorld,
+            "craftingState" => array(
+                "craftingItems" => getCraftingInventory($this->uid),
+                "nextCalendarDate" => 12,
+                "calendarDate" => 11,
+                "maxCapacity" => 400,
+                "currentMarketStallCount" => 1,
+                "firstCraft" => "stall",
+                "shoppingState" => null,
+                "pendingRewards" => null,
+                "craftingSkillState" => getCraftingSkillState($this->uid),
+                "recipeQueue" => getRecipeQueue($this->uid)
+            ),
+            "userInfo" => array(
+                "currentWorldType" => $currentWorldType,
+                "attr" => array(
+                    "name" => $row["firstName"]
+                ),
+                "unlockedWorldTypes" => getUnlockedWorlds($this->uid),
+                "player" => array(
+                    "gold" => $row['gold'],
+                    "cash" => $row['cash'],
+                    "xp" => $row['xp'],
+                    "energyMax" => $row['energyMax'],
+                    "energy" => $row['energy'],
+                    "options" => array(
+                        "sfxDisabled" => false,
+                        "musicDisabled" => false,
+                        "animationDisabled" => false
+                    ),
+                    "storageData" => [
+                        GIFTBOX_STORAGE_KEY => buildGiftBoxStorageData($this->uid),
+                        INVENTORY_STORAGE_KEY => buildInventoryStorageData($this->uid)
+                        ],
+                    "hasVisitFriend" => false,
+                    "achievements" => array(),
+                    "achCounters" => null,
+                    "mastery" => $masteryClientData['mastery'],
+                    "masteryCounters" => $masteryClientData['masteryCounters'],
+                    'organicCounters' => null,
+                    'organicCertificationTotal' => null,
+                    'collectionCounters' => null,
+                    'storedCollections' => null,
+                    'collectionLevels' => null,
+                    'hasUnlimitedLights' => null,
+                    'farmServiceCredits' => [],
+                    'altGraphicCredits' => null,
+                    'numLightsLeft' => 0,
+                    'numOpenedPresents' => 0,
+                    'dateOfLastPublishPermissionRequest' => 0,
+                    'hasPublishPermission' => true,
+                    'lastHorseStableSendTime' => 0,
+                    'lastFrenchChateauSendTime' => 0,
+                    'lastNurserySendTime' => 0,
+                    'incrementalGateArray' => 0,
+                    'progressBarData' => null,
+                    'neighborPlumbingAddExcludeList' => null,
+                    'pendingNeighbors' => $this->getPendingNeighbors(),
+                    'neighbors' => $this->getCurrentNeighborUids(),
+                    'lastSocialPlumbingActionTime' => 0,
+                    'adoptedAnimals' => 0,
+                    'superCropsStatus' => null,
+                    'lotteryTickets' => 0,
+                    'lonelyAnimalCode' => "2dvd",
+                    'motdSeenFlags' => 0,
+                    'limitedSaleExpirations' => 0,
+                    'cashPurchasedTotal' => "100000",
+                    'initialCashPurchaseTransactions' => 0,
+                    'initialCPATransactions' => 0,
+                    'avatarSurfacingEnabled' => false,
+                    'avatarSurfacingFrequency' => 0,
+                    'avatarSurfacingItem' => null,
+                    'transactionLog' => null,
+                    'farmTalkPermission' => true,
+                    'chatLastMessageReadTime' => 0,
+                    'userId' => $row['uid'],
+                    'featureCredits' => getFeatureCreditsForClient($this->uid),
+                    'incrementalFriendChecks' => array(),
+                    'friendRewards' => null,
+                    'seenFlags' => @unserialize($row['seenFlags']) ?: [], //tutorial flag
+                    'itemFlags' => array("giftcard" => ""),
+                    'featureFrequency' => $this->getFeatureFrequencies(),
+                    'externalLevels' => array(
+
+                    ),
+                    'actionCounts' => ["AvatarSurfaceThrottle_backoff_base"],
+                    'neighborActionLimits' => array(
+                        'm_neighborActionLimits' => getNeighborActionLimits($this->uid)
+                    ),
+                    'energyManager' => array(
+                        "turboChargers" => 0
+                    ),
+                    "isAKeynoteUser" => "1"
+                ),
+                "worldSummaryData" => array(
+                    $currentWorldType => array(
+                        "firstLoaded" => strtotime($currentWorld['creation']),
+                        "lastLoaded" => strtotime(date("Y-m-d h:i:s"))
+                    )
+                ),
+                "is_new" => $row["isNew"],
+                "firstDay" => $row["firstDay"],
+                "firstDayTimestamp" => 0,
+                "featureOptions"=> $this->buildFeatureOptions(),
+                "iconCodes" => [
+                    "scratchCard"
+                ],
+                "avatar" => $this->getAvatar(),
+                "questComponent" => buildQuestComponent($this->uid)
+
+            )
+        );
+
+        return $this->pData;
+    }
+
+    private function buildFeatureOptions() {
+        $irrigationData = getIrrigationData($this->uid);
+
+        return [
+            "world_seasons" => [
+                "farm" => 0,
+                "avalon" => 1
+            ],
+            "irrigation" => [
+                "irrigation" => $irrigationData
+            ]
+        ];
+    }
+
+    public function getAvatar(){
+        $this->avatarData = null;
+
+        if (is_numeric($this->uid)){
+            $this->avatarData = UserAvatar::getForUser($this->uid);
+        }
+
+        return $this->avatarData;
+    }
+
+    public function setWorld($newObj, $action, $newSizeX = null, $newSizeY = null){
+        $currentWorldType = get_meta($this->uid, "currentWorldType") ?: "farm";
+
+        if (empty($this->worldData)){
+            $currWorld = getWorldByType($this->uid, $currentWorldType);
+        }else{
+            $currWorld = $this->worldData;
+        }
+
+        $worldId = getWorldId($this->uid, $currentWorldType);
+        if ($worldId === null) {
+            Logger::error('World', "setWorld: no world found for uid={$this->uid} type=$currentWorldType");
+            $this->db->destroy();
+            return false;
+        }
+
+        $delActions = [ACTION_SELL, ACTION_CLEAR];
+        $exists = "";
+        $usedIds = [];
+        $existsAtPosition = [];
+        $operationType = null;
+        $newId = 0;
+
+        $newPosX = isset($newObj->position) ? ($newObj->position->x ?? null) : null;
+        $newPosY = isset($newObj->position) ? ($newObj->position->y ?? null) : null;
+
+        foreach ($currWorld["objectsArray"] as $key => $tile){
+            if ($newObj->id == $tile->id){
+                $exists = $key;
+            }
+
+            if (isset($tile->id) && $tile->id > 0 && $tile->id < TEMP_ID_THRESHOLD) {
+                $usedIds[$tile->id] = true;
+            }
+
+            if ($newPosX !== null && $newPosY !== null && isset($tile->position)) {
+                $tilePosX = $tile->position->x ?? null;
+                $tilePosY = $tile->position->y ?? null;
+                if ($tilePosX === $newPosX && $tilePosY === $newPosY && $key !== $exists) {
+                    $existsAtPosition[] = $key;
+                }
+            }
+        }
+
+        if (!empty($existsAtPosition)) {
+            foreach ($existsAtPosition as $dupKey) {
+                $dupObj = $currWorld["objectsArray"][$dupKey];
+                $dupPosX = $dupObj->position->x ?? ($dupObj->position['x'] ?? null);
+                $dupPosY = $dupObj->position->y ?? ($dupObj->position['y'] ?? null);
+                if ($dupPosX !== null && $dupPosY !== null) {
+                    deleteWorldObjectByPosition($worldId, (int)$dupPosX, (int)$dupPosY);
+                }
+                unset($currWorld["objectsArray"][$dupKey]);
+            }
+            $currWorld["objectsArray"] = array_values($currWorld["objectsArray"]);
+            $exists = "";
+            foreach ($currWorld["objectsArray"] as $key => $tile) {
+                if ($newObj->id == $tile->id) {
+                    $exists = $key;
+                    break;
+                }
+            }
+        }
+
+        if (($action == ACTION_PLOW || $action == ACTION_PLANT) && $newObj->id >= TEMP_ID_THRESHOLD){
+            $placement = CollisionDetector::validatePlacement($newObj, $currWorld["objectsArray"], $action);
+            
+            if ($placement['existingKey'] !== null) {
+                $newObj->id = $currWorld["objectsArray"][$placement['existingKey']]->id;
+                $exists = $placement['existingKey'];
+            } elseif ($placement['reason'] === 'collision_detected') {
+                $this->db->destroy();
+                return false;
+            } else {
+                $newId = null;
+                $maxSafeId = TEMP_ID_THRESHOLD - 1;
+                for ($i = 1; $i <= $maxSafeId; $i++) {
+                    if (!isset($usedIds[$i])) {
+                        $newId = $i;
+                        break;
+                    }
+                }
+                if ($newId !== null) {
+                    $newObj->id = $newId;
+                }
+                $exists = "";
+            }
+        }
+
+        if (in_array($action, $delActions) && $exists === ""){
+            return false;
+        }
+
+        if ($action == ACTION_HARVEST && $exists !== ""){
+            $existingObj = $currWorld["objectsArray"][$exists];
+            $className = $existingObj->className ?? null;
+            $isAnimal = $className && (
+                stripos($className, 'Animal') !== false ||
+                stripos($className, 'Chicken') !== false ||
+                stripos($className, 'Cow') !== false ||
+                stripos($className, 'Pig') !== false ||
+                stripos($className, 'Sheep') !== false ||
+                stripos($className, 'Horse') !== false ||
+                stripos($className, 'Goat') !== false
+            );
+
+            if (!$isAnimal) {
+                $plantTime = $existingObj->plantTime ?? null;
+                $itemName = $existingObj->itemName ?? null;
+                if ($plantTime !== null && $itemName !== null){
+                    $itemData = getItemByName($itemName, "db");
+                    if ($itemData && isset($itemData["growTime"])){
+                        $growTimeDays = (float) $itemData["growTime"];
+                        $growTimeMs = calculateGrowTimeMs($growTimeDays);
+                        $nowMs = getCurrentTimeMs();
+                        if ($nowMs < ($plantTime + $growTimeMs)){
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+
+        if ($exists !== "" && !in_array($action, $delActions)){
+            $operationType = 'UPDATE';
+            $existingObj = $currWorld["objectsArray"][$exists];
+            if (isset($existingObj->contents) && is_array($existingObj->contents) && !empty($existingObj->contents)){
+                $newObj->contents = $existingObj->contents;
+            }
+
+            $className = $newObj->className ?? "";
+
+            switch ($action) {
+                case ACTION_HARVEST:
+                    $postHarvest = getPostHarvestState($className);
+                    $newObj->state = $postHarvest['state'];
+                    $newObj->plantTime = $postHarvest['plantTime'];
+                    if (isset($postHarvest['itemName'])) {
+                        $newObj->itemName = $postHarvest['itemName'];
+                    }
+                    if (isset($postHarvest['isJumbo'])) {
+                        $newObj->isJumbo = $postHarvest['isJumbo'];
+                    }
+                    break;
+                case ACTION_CLEAR_WITHERED:
+                    $newObj->state = PLOT_STATE_PLOWED;
+                    $newObj->plantTime = null;
+                    $newObj->itemName = null;
+                    break;
+            }
+
+            $currWorld["objectsArray"][$exists] = $newObj;
+
+        }else if (in_array($action, $delActions)){
+            $operationType = 'DELETE';
+            unset($currWorld["objectsArray"][$exists]);
+            $currWorld["objectsArray"] = array_values($currWorld["objectsArray"]);
+
+        }else {
+            $operationType = 'INSERT';
+            
+            $collision = CollisionDetector::checkCollision($newObj, $currWorld["objectsArray"]);
+            if ($collision['collides']) {
+                $this->db->destroy();
+                return false;
+            }
+            
+            if (isset($newObj->className) && $newObj->className === 'FeatureBuilding' && isset($newObj->itemName)) {
+                $itemData = getItemByName($newObj->itemName, "db");
+                if ($itemData && hasExpandFeature($itemData)) {
+                    if (!isset($newObj->expansionLevel)) {
+                        $newObj->expansionLevel = isset($itemData['initialExpansionLevel'])
+                            ? (int)$itemData['initialExpansionLevel']
+                            : 1;
+                    }
+                    if (!isset($newObj->expansionParts)) {
+                        $newObj->expansionParts = new \stdClass();
+                    }
+                }
+            }
+
+            $currWorld["objectsArray"][] = $newObj;
+        }
+
+        $newObj = $this->sanitizeObjectValues($newObj);
+
+        if ($newSizeX !== null || $newSizeY !== null) {
+            if ($newSizeX != null){
+                $currWorld["sizeX"] = $newSizeX;
+            }
+            if ($newSizeY != null){
+                $currWorld["sizeY"] = $newSizeY;
+            }
+            foreach ($currWorld["objectsArray"] as $key => $obj) {
+                $currWorld["objectsArray"][$key] = $this->sanitizeObjectValues($obj);
+            }
+            $this->worldData = $currWorld;
+            $saveResult = saveWorld($this->uid, $currentWorldType, $currWorld);
+            $this->db->destroy();
+            if (!$saveResult) {
+                throw new \Exception("Failed to save world data for uid={$this->uid}");
+            }
+            if ($newId > 0){
+                return $newId;
+            }
+            return 0;
+        }
+
+        $this->worldData = $currWorld;
+
+        $dbResult = true;
+        switch ($operationType) {
+            case 'DELETE':
+                $dbResult = deleteWorldObjectByPosition($worldId, (int)$newPosX, (int)$newPosY);
+                break;
+            case 'UPDATE':
+                $dbResult = updateWorldObjectFull($worldId, $newObj);
+                break;
+            case 'INSERT':
+                $dbResult = insertWorldObject($worldId, $newObj);
+                break;
+        }
+
+        invalidateWorldCache($this->uid, $currentWorldType);
+
+        $this->db->destroy();
+
+        if (!$dbResult) {
+            throw new \Exception("Failed to perform $operationType on world object for uid={$this->uid}");
+        }
+
+        if ($newId > 0){
+            return $newId;
+        }
+
+        return 0;
+    }
+
+    
+    private function sanitizeObjectValues($obj) {
+        if (!is_object($obj)) {
+            return $obj;
+        }
+
+        foreach (get_object_vars($obj) as $prop => $val) {
+            if (is_float($val) && (is_nan($val) || is_infinite($val))) {
+                $obj->$prop = 0;
+            } elseif (is_string($val) && (strtoupper($val) === 'NAN' || strtoupper($val) === 'INF' || strtoupper($val) === '-INF')) {
+                $obj->$prop = 0;
+            } elseif (is_object($val)) {
+                $obj->$prop = $this->sanitizeObjectValues($val);
+            } elseif (is_array($val)) {
+                foreach ($val as $k => $v) {
+                    if (is_object($v)) {
+                        $val[$k] = $this->sanitizeObjectValues($v);
+                    } elseif (is_float($v) && (is_nan($v) || is_infinite($v))) {
+                        $val[$k] = 0;
+                    } elseif (is_string($v) && (strtoupper($v) === 'NAN' || strtoupper($v) === 'INF' || strtoupper($v) === '-INF')) {
+                        $val[$k] = 0;
+                    }
+                }
+                $obj->$prop = $val;
+            }
+        }
+
+        return $obj;
+    }
+
+    public function storeItem($buildingObj, $storeParams){
+        $currentWorldType = get_meta($this->uid, "currentWorldType") ?: "farm";
+
+        if (empty($this->worldData)){
+            $currWorld = getWorldByType($this->uid, $currentWorldType);
+        }else{
+            $currWorld = $this->worldData;
+        }
+
+        $buildingId = $buildingObj->id ?? null;
+        $itemCode = $storeParams->storedItemCode ?? null;
+        $resourceId = (int) ($storeParams->resource ?? 0);
+        $numToStore = (int) ($storeParams->numToStore ?? 1);
+
+        if (!$buildingId || !$itemCode) return 0;
+
+        $extraData = null;
+        if ($resourceId > 0) {
+            foreach ($currWorld["objectsArray"] as $key => $obj) {
+                if ($obj->id == $resourceId) {
+                    $extraData = (object)[
+                        'id' => $obj->id,
+                        'itemName' => $obj->itemName ?? null,
+                        'state' => $obj->state ?? null,
+                        'direction' => $obj->direction ?? null
+                    ];
+                    unset($currWorld["objectsArray"][$key]);
+                    $currWorld["objectsArray"] = array_values($currWorld["objectsArray"]);
+                    break;
+                }
+            }
+        }
+
+        addToInventoryStorage($this->uid, $itemCode, $numToStore, $extraData);
+
+        $this->worldData = $currWorld;
+        $saveResult = saveWorld($this->uid, $currentWorldType, $currWorld);
+        $this->db->destroy();
+
+        if (!$saveResult) {
+            throw new \Exception("Failed to save world data (storeItem) for uid={$this->uid}");
+        }
+
+        return 0;
+    }
+
+    public function withdrawItem($buildingId, $itemCode, $count = 1){
+        $extraData = withdrawFromInventoryStorage($this->uid, $itemCode);
+        if ($count > 1) {
+            removeFromInventoryStorage($this->uid, $itemCode, $count - 1);
+        }
+        return $extraData;
+    }
+
+    public function setAvatar($attribs){
+        if (is_numeric($this->uid) && is_array($attribs)){
+            $attribs = serialize($attribs);
+            UserAvatar::updateAttributes($this->uid, $attribs);
+        }
+    }
+
+    public function expandWorld($newSizeX, $newSizeY){
+        $currentWorldType = get_meta($this->uid, "currentWorldType") ?: "farm";
+
+        if (empty($this->worldData)){
+            $currWorld = getWorldByType($this->uid, $currentWorldType);
+        }else{
+            $currWorld = $this->worldData;
+        }
+
+        $currWorld["sizeX"] = $newSizeX;
+        $currWorld["sizeY"] = $newSizeY;
+
+        $this->worldData = $currWorld;
+
+        UserWorld::updateSize($this->uid, $currentWorldType, $newSizeX, $newSizeY);
+
+        return $currWorld;
+    }
+
+    public function getPlayerDataForNeighbor(){
+        $rows = [];
+
+        if (is_numeric($this->uid)){
+            $rows = User::join('usermeta', 'users.uid', '=', 'usermeta.uid')
+                ->where('users.uid', '<>', $this->uid)
+                ->select([
+                    'users.uid as uid',
+                    'users.name as name',
+                    'usermeta.firstName as firstname',
+                    'usermeta.lastName as lastname'
+                ])
+                ->get()
+                ->toArray();
+        }
+
+        return $rows;
+    }
+
+    public function getCurrentNeighbors(){
+        $currNeighbors = get_meta($this->uid, 'current_neighbors');
+
+        if (!$currNeighbors){
+            return [];
+        }
+
+        $currNeighborUids = @unserialize($currNeighbors) ?: [];
+        if (empty($currNeighborUids)) {
+            return [];
+        }
+
+        return $this->getPlayersDataBatch($currNeighborUids);
+    }
+
+    
+    private function getPlayersDataBatch(array $uids){
+        if (empty($uids)) {
+            return [];
+        }
+
+        $uids = array_values(array_unique(array_filter($uids, 'is_numeric')));
+        if (empty($uids)) {
+            return [];
+        }
+
+        $usersData = User::join('usermeta', 'users.uid', '=', 'usermeta.uid')
+            ->whereIn('users.uid', $uids)
+            ->select([
+                'users.uid as uid',
+                'users.name as name',
+                'usermeta.firstName as firstname',
+                'usermeta.lastName as lastname',
+                'usermeta.xp as xp',
+                'usermeta.gold as gold',
+                'usermeta.profile_picture as profile_picture'
+            ])
+            ->get()
+            ->keyBy('uid')
+            ->toArray();
+
+        $avatarRows = UserAvatar::whereIn('uid', $uids)->get();
+        $avatars = [];
+        foreach ($avatarRows as $avatarRow) {
+            $avatars[$avatarRow->uid] = ($avatarRow->value !== null) ? @unserialize($avatarRow->value) : null;
+        }
+
+        $worldsRows = PlayerMeta::whereIn('uid', $uids)
+            ->where('meta_key', 'unlocked_worlds')
+            ->get();
+        $unlockedWorldsData = [];
+        foreach ($worldsRows as $worldsRow) {
+            $unlockedWorldsData[$worldsRow->uid] = $worldsRow->meta_value;
+        }
+
+        $validPurchasable = VALID_PURCHASABLE_WORLDS;
+
+        $neighborData = [];
+        foreach ($uids as $uid) {
+            if (!isset($usersData[$uid])) {
+                continue;
+            }
+
+            $row = $usersData[$uid];
+            $xp = (int) ($row['xp'] ?? 0);
+            $gold = (int) ($row['gold'] ?? 0);
+            $level = getLevelForXp($xp);
+            $avatar = $avatars[$uid] ?? null;
+
+            $picSquare = $row['profile_picture'] ?: "https://fv-assets.s3.us-east-005.backblazeb2.com/profile-pictures/default_avatar.png";
+
+            $unlockedWorlds = ['farm'];
+            if (isset($unlockedWorldsData[$uid])) {
+                $worlds = @unserialize($unlockedWorldsData[$uid]);
+                if (is_array($worlds)) {
+                    $purchasedWorlds = array_intersect($worlds, $validPurchasable);
+                    $unlockedWorlds = array_values(array_unique(array_merge($unlockedWorlds, $purchasedWorlds)));
+                }
+            }
+
+            $neighborData[] = (object) [
+                "uid" => (string) $row['uid'],
+                "name" => $row['name'],
+                "first_name" => $row['firstname'],
+                "last_name" => $row['lastname'],
+                "level" => $level,
+                "xp" => $xp,
+                "gold" => $gold,
+                "avatar" => $avatar,
+                "profilePic" => "",
+                "isNeighbor" => true,
+                "community" => 0,
+                "stats" => null,
+                "achievementDetails" => null,
+                "mastery" => 0,
+                "featureCredits" => null,
+                "unlockedWorldTypes" => $unlockedWorlds,
+                "worldScores" => null,
+                "hasEmailPermission" => false,
+                "breedingStats" => null,
+                "questIds" => null,
+                "is_app_user" => true,
+                "valid" => true,
+                "allowed_restrictions" => false,
+                "pic_square" => $picSquare,
+                "pic_big" => $picSquare
+            ];
+        }
+
+        return $neighborData;
+    }
+
+    private function getCurrentNeighborUids(){
+        $currNeighbors = get_meta($this->uid, 'current_neighbors');
+
+        if (!$currNeighbors){
+            return [];
+        }
+        return @unserialize($currNeighbors) ?: [];
+    }
+
+    public function setPendingNeighbors($pid){
+
+        $res_uns = [];
+
+        $currNeighbors = get_meta($pid, 'pending_neighbors');
+        if ($currNeighbors){
+            $res_uns = @unserialize($currNeighbors) ?: [];
+            if (!in_array($this->uid, $res_uns)){
+                $res_uns[] = $this->uid;
+            }
+        }else{
+            $res_uns[] = $this->uid;
+        }
+
+        set_meta($pid, 'pending_neighbors', serialize($res_uns));
+
+    }
+
+    public function getPendingNeighbors(){
+        $pendingNeighbors = get_meta($this->uid, 'pending_neighbors');
+
+        if (!$pendingNeighbors){
+            return [];
+        }
+        return @unserialize($pendingNeighbors) ?: [];
+    }
+
+    
+    private function getFeatureFrequencies() {
+        $raw = get_meta($this->uid, 'feature_frequency_timestamps');
+        $stored = $raw ? (@unserialize($raw) ?: []) : [];
+
+        $defaults = [
+            "AvatarIndicatorLastInteraction" => 10,
+            "r2AddNeighborInFlashPop" => 0
+        ];
+
+        return array_merge($defaults, $stored);
+    }
+}

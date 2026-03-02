@@ -1,0 +1,550 @@
+/**
+ * File Name: main.css
+ *
+ * This file holds all of the global styles for the site
+ */
+
+html { font-size: 11px; font-family: 'lucida grande',tahoma,verdana,arial,sans-serif; }
+h1 { font-size: 11pt; font-weight: bold; }
+h2 { font-weight: bold; }
+a { color:#3B5998; cursor:pointer; text-decoration:none; }
+iframe { border: none; }
+
+.noticebox {border: 1px solid #FFD100; background-color: #FFF4BF; padding: 8px; margin-bottom: 10px;}
+.marketingbox {border: 1px solid #002eff; background-color: #bfcaff; padding: 8px; margin-bottom: 10px;}
+.subheader {font-size: 13px; border-bottom: 1px solid #808080; padding: 4px 0 2px 0; margin: 0 0 6px 0;}
+.section {margin: 0 0 10px 0;}
+
+.padding_content { padding: 8px; }
+.help div, .help h2 { padding: 4px 0px; }
+.help h1 { padding-bottom: 4px; }
+.help ul { list-style-type: disc; margin: 5px 20px; padding: 0px 10px; }
+
+.left { display: block; float: left; }
+.center { text-align: center; }
+.right { display: block; float: right; }
+.clear { clear: both; }
+
+/* Gifts page */
+.gift_img {
+	margin: 17px 11px 0 0;
+	text-align: center;
+	height: 75px;
+}
+
+.gift_name {
+	margin: 5px 17px 0px 5px;
+	color: #70461e;
+	font-weight: bold;
+}
+
+li.giftLocked .gift_name {
+	color: #666;
+}
+
+.gift_name  span {
+	display: block;
+	height: 30px;
+}
+
+.gift_action {
+	margin: 3px 17px 0px 5px;
+	color: red;
+	font-weight: bold;
+}
+
+.giftIconImg {
+	width: 75px;
+	height: 75px;
+}
+
+.toggle_tabs {
+	border-bottom: 1px solid #898989;
+}
+
+.toggle_tabs li a {
+	border-color: #898989;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	color:#333333;
+	display:inline-block;
+	font-weight:bold;
+	padding:2px 8px 3px 9px;
+	text-decoration: none;
+}
+
+.toggle_tabs li.first a {
+	border-width: 1px 1px 0 1px;
+}
+
+.toggle_tabs li {
+	display: inline;
+	margin-left: -3px;
+	padding:2px 0 3px;
+}
+
+.toggle_tabs li.selected a {
+	background-color: #3B5998;
+	color: #fff;
+
+}
+
+.giftformsubmit {
+	background-color:#3B5998;
+	border-color:#D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+	border-style:solid;
+	border-width:1px;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	margin:1px 5px;
+	padding:3px 10px;
+	text-decoration:none;
+}
+
+.giftsendbtn {
+	background-color:#3B5998;
+	border-color:#D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+	border-style:solid;
+	border-width:1px;
+	color:white;
+	font-size:10px;
+	margin:1px 5px;
+	padding:3px 10px;
+	text-decoration:none;
+}
+
+.fv_main_body_cont {
+	width: 760px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+.main_gift_cont ul {
+	list-style-type: none;
+}
+
+.ui-dialog-titlebar { display: none; }
+
+.newRequestsIcon, .requestsIcon { float: right; height: 32px; width: 45px; }
+.newRequestsIcon { margin-top: -22px; margin-right: 10px; }
+.requestsIcon { width: auto; position: relative; top: 5px; }
+.newRequestsIcon a { text-decoration: none; color: #FFFFFF; }
+.requestsIcon a { text-decoration: none; color: #999999; }
+.newRequestsIcon .amount, .requestsIcon .amount {
+	font-family: 'Lucida Grande', sans-serif;
+	font-weight: bold;
+	font-size: 11pt;
+}
+.newRequestsIcon .amount {
+	margin-left: 17px;
+	width: 26px;
+	text-align: center;
+	position: relative;
+	top: 23px;
+}
+.requestsIcon .amount { margin-left: 25px; font-size: 9pt; }
+
+/* promo bar */
+.footerPromo {
+	margin-bottom: 1px;
+}
+
+/* CPA Skyscraper */
+.cpaSkyscraper {
+	display: block;
+	float: left;
+	width: 250px;
+}
+
+.featureBox {
+	border: 1px solid #ccc;
+	margin: -1px -1px 0 0;
+	width: 252px;
+	height: 139px;
+	float: left;
+	text-align: left;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font: 0.95em verdana, tahoma, arial;
+	position: relative;
+	background: url(//zynga1-a.akamaihd.net/farmville/webassets/images/v854054/webassets/images/promobar_bg_v3.png) 0 0 no-repeat;
+	outline: none;
+}
+
+.featureBox.spnsrd {
+	background: url(//zynga1-a.akamaihd.net/farmville/webassets/images/v854054/webassets/images/promobar_sponsored_v2.png) -1px -1px no-repeat;
+	border-color: #a0cbfe;
+	z-index: 1;
+}
+
+.featureBox.spnsrd .title {
+	color: #516ca4;
+	text-align: center;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 100%;
+	font-size: .8em;
+}
+
+.featureBox .icon {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 25px 18px 10px;
+}
+
+.featureBox .content {
+	margin: 21px 11px 0 12px;
+	line-height: 1.5em;
+}
+
+.featureBox h3 {
+	font-weight: bold;
+}
+
+.featureBox .bookmark {
+	width: 120px;
+	height: 24px;
+}
+
+.featureBox .footer {
+	margin: 10px 0 0 0;
+	font-size: .85em;
+}
+
+#javascriptContent {
+	float:left;
+}
+
+/* FB feed */
+
+.feed_container {
+	display: none;
+	float: left;
+	width: 506px;
+	height: 400px;
+	min-height: 400px;
+	height: auto;
+}
+
+ul.feed_tabs {
+	border-bottom: 1px solid #ccc;
+}
+
+ul.feed_tabs li {
+	float: left;
+	margin: 2px 0 -1px 5px;
+	border: 1px solid #ccc;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 3px 15px;
+	background: url(//zynga1-a.akamaihd.net/farmville/webassets/images/v854054/webassets/images/promobar_bg_v3.png) -60px -5px;
+	color: #666;
+	cursor: pointer;
+}
+
+ul.feed_tabs li.active_tab {
+	background: #fff;
+	border-bottom: 0;
+	color: #000;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	margin-top: 0;
+}
+
+#game_feed .feed_block {
+	border-bottom: 1px solid #eee;
+	padding: 8px 0px 8px 8px;
+	width: 475px;
+	min-height:70px;
+	position:relative;
+	vertical-align:top;
+	font-family: 'lucida grande', tahoma, verdana,arial,sans-serif;
+}
+
+#game_feed .feed_block .profile_pic {
+	left:0;
+	position:absolute;
+	padding-bottom:6px;
+	display:block;
+}
+
+#game_feed .feed_block .message {
+	margin-bottom: 6px;
+}
+
+#game_feed .feed_block .story_pic {
+	width: 90px;
+	margin-right: 15px;
+	float: left;
+}
+
+#game_feed .feed_block .story_pic img {
+	width: 90px;
+	height: 90px;
+}
+
+#game_feed .feed_block .story_msg {
+	font-weight: 400;
+	color: #000;
+}
+
+#game_feed .feed_block .feed_body {
+	margin-left:60px;
+	font-size: 13px;
+	color: #000;
+}
+
+#game_feed .feed_block .story_desc {
+	font-size: 11px;
+	color: #808080;
+	float: left;
+	width: 300px;
+}
+
+#game_feed .feed_block .name, #game_feed .feed_block .story_title {
+	color: #3B5998;
+	font-weight: bold;
+}
+
+#game_feed .feed_block .action_links {
+	margin-top: 8px;
+	font-size: .85em;
+}
+
+#game_feed .feed_block .action_links a {
+	color: #999;
+}
+
+.feed_container .event_item_wrapper {
+	padding: 10px 0 0;
+}
+
+.feed_container .event_item {
+	padding-left: 35px;
+	color: #666;
+}
+
+.feed_container .event_item .action_link {
+	color: #3B5998;
+}
+
+.feed_container .event_profile_img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+}
+
+.feed_container .event_timestamp {
+	display: block;
+	color: #999;
+	font-size: .9em;
+}
+
+.feed_container .event_item_wrapper {
+	font-size: 1.1em;
+	border: 1px solid #ccc;
+	margin: 10px 10px 10px 0;
+	padding: 8px;
+	background: url(//zynga1-a.akamaihd.net/farmville/webassets/images/v854054/webassets/images/promobar_bg_v3.png) 0 -6px;
+	position: relative;
+}
+
+.feed_container .event_item {
+	padding-left: 58px;
+	color: #000;
+}
+
+.feed_container .event_content {
+	display: block;
+	min-height: 27px;
+}
+
+.feed_container .event_item .action_link {
+
+	float: right;
+	padding: 3px 10px;
+	border: 1px solid #469;
+	color: #fff;
+	background: #57a;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.feed_container .event_timestamp {
+	margin-top: 9px;
+}
+
+.userActivityOptOut {
+	margin: 10px 0;
+}
+
+#userActivityContent .action_link {
+	display: none;
+}
+
+/** Styles for fast-switching IFrames */
+#appFrame .offscreen {
+	height: 0;
+	top: -10000px;
+}
+
+.dotcomoffscreen {
+	height: 0;
+	top: -10000px;
+}
+
+#flashFrame, #htmlFrame, #loadingFrame, #screenshotFrame, #innerFlashDiv {
+	overflow: hidden;
+}
+
+#flashFrame {
+	position: relative;
+	padding-top: 10px;
+}
+
+#htmlFrame iframe {
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+#htmlFrame iframe.preloaded {
+	height: 0 !important;
+}
+
+#loadingFrame {
+	background-color: #fff;
+	text-align: center;
+	height: 500px;
+}
+
+#loadingFrame img {
+	margin-top: 30px;
+}
+
+center {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+}
+
+#skUpdater {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#skUpdater iframe {
+	border: 0;
+}
+
+#z_lang {
+	position: absolute;
+	top:199px;
+	right: 60px;
+	z-index: 100;
+	float: right;
+	font-size: 14px;
+	background: #efe9de;
+	border: 1px solid #d5843d;
+}
+#z_lang li a {
+	padding-left: 5px;
+	padding-right: 80px;
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+}
+#z_lang a:hover {
+	background: #78756f;
+	color: white;
+}
+#z_lang a.selected {
+	background: #fdb13b;
+	color: black;
+}
+
+#youtube_banner_wrapper {
+	height:120px;
+	width:760px;
+}
+
+.farm-game-id {
+	float: left;
+	text-align: left;
+	margin: 5px 0 5px 10px;
+	font-weight: bold;
+	color: grey;
+}
+
+.farm-game-plugin {
+	float: right;
+	text-align: right;
+	margin: 5px 10px 5px 10px;
+	font-weight: bold;
+	color: grey;
+}
+.farm-game-browser {
+	float: right;
+	text-align: right;
+	margin: 5px 10px 5px 10px;
+	font-weight: bold;
+	color: grey;
+}
+
+.chrome-plugin-ad{
+	text-align: center;
+}
+
+.chrome-plugin-icon{
+	float: left;
+    width: 100px;
+    height: 85px;
+    border: 0.5px grey solid;
+	-webkit-border-radius: 8px 0px 0px 8px;
+	display: block;
+}
+
+.chrome-plugin-body{
+    float: left;
+    width: 529px;
+    height: 85px;
+	border: 0.5px grey solid;
+	-webkit-border-radius: 0px 8px 8px 0px;
+}
+
+.chrome-plugin-body .title{
+	text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.chrome-plugin-body .body{
+	text-align: center;
+    font-size: 13px;
+    padding-top: 4px;
+}
+
+.chrome-plugin-body .bottom{
+	text-align : center;
+	font-size : 15px;
+}
+
+.chrome-plugin-ad-bottom{
+	width: 661px;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}

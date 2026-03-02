@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collections>
+	<collectionConfig collectionStartLevel="10"
+		collectableCap="10"
+		collectionPopupDuration="12"
+		collectionFriendRewardTimeLimit="86400"
+		collectionFriendRewardLimit="1"
+		collectionBaseCoinsReward="500"
+		collectionBaseXpReward="50"
+		collectionRareWeight="8"
+		collectionUncommonWeight="17"
+		collectionCommonWeight="75"/>
+	
+	<sources id="grains" subtype="grain" />
+	<sources id="citrus">
+		<source name="orangeblood" />
+		<source name="keylime" />
+		<source name="orange" />
+		<source name="ponderosalemon" />
+		<source name="starrubygrapefruit" />
+		<source name="lemon" />
+		<source name="lime" />
+		<source name="grapefruit" />
+	</sources>
+	<sources id="squash">
+		<source name="squash" />
+		<source name="pumpkin" />
+		<source name="pumpkinsuper" />
+		<source name="squashpetitpan" />
+		<source name="zucchini" />
+		<source name="squashacorn" />
+		<source name="carnivalsquash" />
+		<source name="squashkin" />
+		<source name="squashpetitpansuper" />
+	</sources>
+	<sources id="flowers" subtype="flowers" />
+	<sources id="cows">
+		<source name="cow_disco" />
+		<source name="cow_fanpage" />
+		<source name="cow_yellowpatch" />
+		<source name="cow_panda" />
+		<source name="cow_heart" />
+		<source name="cow_candycane" />
+		<source name="cow_autumn" />
+		<source name="cow_mmblue" />
+		<source name="cow_robot" />
+		<source name="cow_robot_sale" />
+		<source name="cow_gelbvieh" />
+		<source name="cow_longhorn_brown" />
+		<source name="cow_simmental" />
+		<source name="cow_referee_yellow" />
+		<source name="cow_tuscan_cash" />
+		<source name="cow_tuscan" />
+		<source name="cow_neapolitan" />
+		<source name="cow_longhorn" />
+		<source name="cow_holstein" />
+		<source name="cow_groovy" />
+		<source name="cow_uktophat" />
+		<source name="cow" />
+		<source name="cow_brown" />
+		<source name="cow_pink" />
+		<source name="cow_green" />
+		<source name="cow_pinkpatch" />
+		<source name="cow_referee" />
+		<source name="cow_brownchocolate" />
+		<source name="cow_belted" />
+		<source name="cow_redbrown" />
+		<source name="cow_red" />
+		<source name="cow_purple" />
+		<source name="cow_wreath" />
+		<source name="cow_dexter" />
+		<source name="cow_greenpatch" />
+		<source name="cow_heart_purple" />
+		<source name="cow_liondance" />
+		<source name="cow_shorthorn" />
+		<source name="cow_shamrock" />
+		<source name="cow_jersey" />
+		<source name="cow_devon" />
+		<source name="cow_rainbow" />
+		<source name="cow_flowery" />
+		<source name="cow_hereford" />
+	</sources>
+	<sources id="berries">
+		<source name="strawberry" />
+		<source name="strawberrysuper" />
+		<source name="raspberry" />
+		<source name="cranberry" />
+		<source name="cranberrysuper" />
+		<source name="blueberry" />
+		<source name="redcurrant" />
+		<source name="blackberries" />
+		<source name="elderberry" />
+		<source name="blackberriessuper" />
+		<source name="blueberrysuper" />
+		<source name="blueberry" />
+	</sources>
+	
+	<collection name="grains" code="C001" type="permanent" weight="2" altWeight=".5" icon="assets/crops/crop_wheat_icon.png" >
+		<collectable code="0(" weight="100.0" rarity="common" />
+		<collectable code="1(" weight="26.30" rarity="common" />
+		<collectable code="2(" weight="26.30" rarity="common"  />
+		<collectable code="3(" weight="7.10" rarity="uncommon"  />
+		<collectable code="4(" weight="4.60" rarity="rare"  />
+		<rewards>
+			<reward gift="consume_coins_1000"/>
+			<reward gift="wheatscarecrow"/>
+			<reward gift="springwatermill"/>
+		</rewards>
+	</collection>
+	
+	<collection name="citrus" code="C002" type="permanent" weight="6" altWeight="1" icon="assets/trees/tree_orange_icon.png">
+		<collectable code="5(" chance="100.00" rarity="common"  />
+		<collectable code="6(" chance="26.30" rarity="common" />
+		<collectable code="7(" chance="26.30" rarity="common" />
+		<collectable code="8(" chance="35.00" rarity="uncommon" />
+		<collectable code="9(" chance="4.60" rarity="rare" />
+		<rewards>
+			<reward gift="consume_arborists"/>
+			<reward gift="citrusarchway"/>
+			<reward gift="pony_zesty"/>
+		</rewards>
+	</collection>
+
+	<collection name="squash" code="C003" type="permanent" weight="2" altWeight="0.5" icon="assets/crops/crop_squash_icon.png">
+		<collectable code="(0" weight="26.30" rarity="common" />
+		<collectable code="(1" weight="100.00" rarity="common" />
+		<collectable code="(2" weight="26.30" rarity="common" />
+		<collectable code="(3" weight="5.5" rarity="uncommon" />
+		<collectable code="(4" weight="4.60" rarity="rare" />
+		<rewards>
+			<reward gift="consume_arborists"/>
+			<reward gift="gnomegourd"/>
+			<reward gift="pig_pumpkin"/>
+		</rewards>
+	</collection>
+	
+	<collection name="flowers" code="C004" type="permanent" weight="2" altWeight="0.5" icon="assets/flowers/flower_tulipred_icon.png" >
+		<collectable code="(5" chance="100.00" rarity="common" />
+		<collectable code="(6" chance="26.30" rarity="common" />
+		<collectable code="(7" chance="26.30" rarity="common" />						
+		<collectable code="(8" chance="5.5" rarity="uncommon" />		
+		<collectable code="(9" chance="4.60" rarity="rare" />
+		<rewards>
+			<reward gift="consume_coins_1000"/>
+			<reward gift="flowerbasket"/>
+			<reward gift="cow_flowery"/>
+		</rewards>
+	</collection>
+	
+	<collection name="cows" code="C005" type="permanent" weight="6" altWeight="1" icon="assets/animals/animal_cow_icon.png">
+		<collectable code="A(" chance="100.00" rarity="common" />
+		<collectable code="B(" chance="100.00" rarity="common" />
+		<collectable code="C(" chance="100.00" rarity="common" />
+		<collectable code="D(" chance="5.50" rarity="uncommon" />			
+		<collectable code="E(" chance="5.60" rarity="rare" />
+		<rewards>
+			<reward gift="fuel5"/>
+			<reward gift="decocowflowers"/>
+			<reward gift="cow_rainbow"/>
+		</rewards>
+	</collection>
+
+	<collection name="berries" code="C001" type="permanent" weight="2" altWeight="0.5" icon="assets/crops/crop_blueberry_icon.png">
+		<collectable code="F(" chance="20.00" rarity="common" />
+		<collectable code="G(" chance="20.00" rarity="common" />
+		<collectable code="H(" chance="20.00" rarity="common" />
+		<collectable code="I(" chance="16.00" rarity="uncommon" />	
+		<collectable code="J(" chance="8.00" rarity="rare" />
+		<rewards>
+			<reward gift="consume_fertilize_all"/>
+			<reward gift="berrycrate"/>
+			<reward gift="whitecherryblossomtree"/>
+		</rewards>
+	</collection>
+	
+	<!-- Wishing Well Collections -->
+	<collection name="wwell_st_patricks_day" code="C020" type="slotmachine">
+		<collectable code="gr" chance="15.00" rarity="common" />
+		<collectable code="gs" chance="15.00" rarity="common" />
+		<collectable code="gv" chance="15.00" rarity="common" />
+		<collectable code="gw" chance="15.00" rarity="common" />	
+		<collectable code="gx" chance="15.00" rarity="common" />
+		<collectable code="gy" chance="15.00" rarity="common" />
+		<tradeInReward xp="200" gift="gnomeleprechaun" feedItem="gnomeleprechaun"  feedLimit="1"/>
+	</collection>
+
+	<collection name="wwell_irish_flowers" code="C021" type="slotmachine">
+		<collectable code="gz" chance="16.00" rarity="common" />
+		<collectable code="kz" chance="16.00" rarity="common" />
+		<collectable code="hb" chance="16.00" rarity="common" />
+		<collectable code="hc" chance="16.00" rarity="common" />	
+		<collectable code="hd" chance="16.00" rarity="common" />
+		<collectable code="he" chance="10.00" rarity="uncommon" />
+		<tradeInReward xp="200" gift="rabbit_clover" feedItem="rabbit_clover"  feedLimit="1" />
+	</collection>
+
+	<collection name="wwell_irish_food" code="C022" type="slotmachine" >
+		<collectable code="hf" chance="18.00" rarity="common" />
+		<collectable code="hg" chance="18.00" rarity="common" />
+		<collectable code="hi" chance="18.00" rarity="common" />
+		<collectable code="hj" chance="18.00" rarity="common" />	
+		<collectable code="hk" chance="9.00" rarity="uncommon" />
+		<collectable code="hl" chance="9.00" rarity="uncommon" />
+		<tradeInReward xp="200" gift="shamrockcottage" feedItem="shamrockcottage"  feedLimit="1"  />
+	</collection>  
+	
+	<collection name="wwell_irish_landmarks" code="C023" type="slotmachine" >
+		<collectable code="hm" chance="27.00" rarity="common" />
+		<collectable code="hn" chance="27.00" rarity="common" />
+		<collectable code="ho" chance="13.00" rarity="uncommon" />
+		<collectable code="hp" chance="13.00" rarity="uncommon" />	
+		<collectable code="HQ" chance="5.00" rarity="rare" />
+		<collectable code="hq" chance="5.00" rarity="rare" />
+		<tradeInReward xp="200" gift="cow_dexter" feedItem="cow_dexter"  feedLimit="1"  />
+	</collection>
+	
+	<collection name="wwell_butterfly_collection" code="C024" type="slotmachine">
+		<collectable code="yr" chance="15.00" rarity="common" />
+		<collectable code="zx" chance="15.00" rarity="common" />
+		<collectable code="zw" chance="15.00" rarity="common" />
+		<collectable code="zv" chance="15.00" rarity="common" />	
+		<collectable code="zt" chance="15.00" rarity="common" />
+		<collectable code="zs" chance="15.00" rarity="common" />
+		<tradeInReward xp="200" gift="butterflyflowerbed" feedItem="butterflyflowerbed"  feedLimit="1"/>
+	</collection>
+
+	<collection name="wwell_tree_collection" code="C025" type="slotmachine">
+		<collectable code="zr" chance="15.00" rarity="common" />
+		<collectable code="zq" chance="15.00" rarity="common" />
+		<collectable code="zp" chance="15.00" rarity="common" />
+		<collectable code="zo" chance="15.00" rarity="common" />	
+		<collectable code="zn" chance="15.00" rarity="common" />
+		<collectable code="zm" chance="15.00" rarity="uncommon" />
+		<tradeInReward xp="200" gift="whisperingwillow_white" feedItem="whisperingwillow_white"  feedLimit="1" />
+	</collection>
+
+	<collection name="wwell_bird_collection" code="C026" type="slotmachine" >
+		<collectable code="zl" chance="18.00" rarity="common" />
+		<collectable code="zk" chance="18.00" rarity="common" />
+		<collectable code="zj" chance="18.00" rarity="common" />
+		<collectable code="zi" chance="18.00" rarity="common" />	
+		<collectable code="zh" chance="9.00" rarity="uncommon" />
+		<collectable code="zg" chance="9.00" rarity="uncommon" />
+		<tradeInReward xp="200" gift="nightingale" feedItem="nightingale"  feedLimit="1"  />
+	</collection>  
+	
+	<collection name="wwell_tea_set_collection" code="C027" type="slotmachine" >
+		<collectable code="zf" chance="18.00" rarity="common" />
+		<collectable code="ze" chance="18.00" rarity="common" />
+		<collectable code="zd" chance="18.00" rarity="common" />
+		<collectable code="zc" chance="12.00" rarity="uncommon" />	
+		<collectable code="zb" chance="12.00" rarity="uncommon" />
+		<collectable code="za" chance="12.00" rarity="uncommon" />
+		<tradeInReward xp="200" gift="duck_beefeater" feedItem="duck_beefeater"  feedLimit="1"  />
+	</collection>
+	
+	<collection name="wwell_english_cuisine_collection" code="C028" type="slotmachine" >
+		<collectable code="yz" chance="31.00" rarity="common" />
+		<collectable code="yx" chance="15.00" rarity="uncommon" />
+		<collectable code="yv" chance="15.00" rarity="uncommon" />
+		<collectable code="yu" chance="15.00" rarity="uncommon" />	
+		<collectable code="yt" chance="7.00" rarity="rare" />
+		<collectable code="ys" chance="7.00" rarity="rare" />
+		<tradeInReward xp="200" gift="xukgnomeenglandchef" feedItem="xukgnomeenglandchef"  feedLimit="1"  />
+	</collection>  
+	
+	<collection name="wwell_vehicle_collection" code="C029" type="slotmachine" >
+		<collectable code="yq" chance="35.00" rarity="common" />
+		<collectable code="yp" chance="17.00" rarity="uncommon" />
+		<collectable code="yo" chance="17.00" rarity="uncommon" />
+		<collectable code="yn" chance="7.00" rarity="rare" />	
+		<collectable code="ym" chance="7.00" rarity="rare" />
+		<collectable code="B*" chance="7.00" rarity="rare" />
+		<tradeInReward xp="200" gift="xuktractorbus" feedItem="xuktractorbus"  feedLimit="1"  />
+	</collection>
+	
+	<!-- LESet Collections -->
+	<collection name="leset_vineyard_collection" code="LE01" type="LE" startDate="8/4/2011" endDate="8/11/2011">
+		<collectable code="Q]" numneeded="1"/>
+		<collectable code="N]" numneeded="1"/>
+		<collectable code="RN" numneeded="1"/>
+		<collectable code="RU" numneeded="1"/>	
+		<collectable code="R," numneeded="1"/>
+		<collectable code="R]" numneeded="1"/>
+		<collectable code="R!" numneeded="1"/>
+		<tradeInReward gift="vineyarddeluxefountain"/>
+	</collection>
+	<collection name="leset_fairygarden_collection" code="LE02" type="LE" startDate="8/25/2011" endDate="9/08/2011">
+		<collectable code="0eg" numneeded="1"/>
+		<collectable code="0ei" numneeded="1"/>
+		<collectable code="0ed" numneeded="1"/>
+		<collectable code="0d9" numneeded="1"/>	
+		<collectable code="0d8" numneeded="1"/>
+		<collectable code="0d1" numneeded="1"/>
+		<collectable code="0d7" numneeded="1"/>
+		<tradeInReward gift="fairyisland"/>
+	</collection>
+	<collection name="leset_lighthousecove_collection" code="LE03" type="LE" startDate="9/15/2011" endDate="9/22/2011">
+		<collectable code="0mC" numneeded="1"/>
+		<collectable code="0mB" numneeded="1"/>
+		<collectable code="0mx" numneeded="1"/>
+		<collectable code="0mu" numneeded="1"/>	
+		<collectable code="0ms" numneeded="1"/>
+		<collectable code="0mq" numneeded="1"/>
+		<collectable code="0mo" numneeded="1"/>
+		<tradeInReward gift="xcovenewcoveredbridge"/>
+	</collection>
+	<collection name="leset_lighthousecove2_collection" code="LE04" type="LE" startDate="9/22/2011" endDate="9/29/2011">
+		<collectable code="0lB" numneeded="1"/>
+		<collectable code="0lz" numneeded="1"/>
+		<collectable code="0ny" numneeded="1"/>
+		<collectable code="0nA" numneeded="1"/>	
+		<collectable code="0kV" numneeded="1"/>
+		<collectable code="0lv" numneeded="1"/>
+		<collectable code="0lu" numneeded="1"/>
+		<tradeInReward gift="stonelighthouse"/>
+	</collection>
+	<collection name="leset_halloween_collection" code="LE05" type="LE" startDate="9/29/2011" endDate="10/06/2011">
+		<collectable code="0sk" numneeded="1"/>
+		<collectable code="0sl" numneeded="1"/>
+		<collectable code="0sg" numneeded="1"/>
+		<collectable code="0q1" numneeded="1"/>	
+		<collectable code="0qf" numneeded="1"/>
+		<collectable code="0qY" numneeded="1"/>
+		<collectable code="0qX" numneeded="1"/>
+		<tradeInReward gift="nightmarerider"/>
+	</collection>
+	<collection name="leset_halloween3_collection" code="LE07" type="LE" startDate="10/13/2011" endDate="10/20/2011">
+		<collectable code="0k2" numneeded="1"/>
+		<collectable code="0k3" numneeded="1"/>
+		<collectable code="0wx" numneeded="1"/>
+		<collectable code="0ws" numneeded="1"/>	
+		<collectable code="0wq" numneeded="1"/>
+		<collectable code="0wp" numneeded="1"/>
+		<collectable code="0wo" numneeded="1"/>
+		<tradeInReward gift="gnomepiratefemale"/>
+	</collection>
+	<collection name="leset_halloween2_collection" code="LE06" type="LE" startDate="10/06/2011" endDate="10/13/2011">
+		<collectable code="0qx" numneeded="1"/>
+		<collectable code="0qw" numneeded="1"/>
+		<collectable code="0qv" numneeded="1"/>
+		<collectable code="0qu" numneeded="1"/>	
+		<collectable code="0qn" numneeded="1"/>
+		<collectable code="0qk" numneeded="1"/>
+	    <collectable code="0qg" numneeded="1"/>
+		<collectable code="0qc" numneeded="1"/>
+		<tradeInReward gift="halloween_hauntedforest"/>
+	</collection>
+	<collection name="leset_halloween4_collection" code="LE08" type="LE" startDate="10/20/2011" endDate="11/03/2011">
+		<collectable code="0y3" numneeded="1"/>
+		<collectable code="0y4" numneeded="1"/>
+		<collectable code="0yZ" numneeded="1"/>
+		<collectable code="0yX" numneeded="1"/>	
+		<collectable code="0yW" numneeded="1"/>
+		<collectable code="0yV" numneeded="1"/>
+		<tradeInReward gift="deco_owlpumpkin"/>
+	</collection>
+	<collection name="leset_fairyhollow1_collection" code="LE09" type="LE" startDate="11/03/2011" endDate="11/10/2011">
+		<collectable code="0kC" numneeded="1"/>
+		<collectable code="0kE" numneeded="1"/>
+		<collectable code="0kv" numneeded="1"/>
+		<collectable code="0kw" numneeded="1"/>	
+		<collectable code="0km" numneeded="1"/>
+		<collectable code="0j2" numneeded="1"/>
+		<collectable code="0DT" numneeded="1"/>
+		<collectable code="0cy" numneeded="1"/>
+		<tradeInReward gift="dragonflyfountain"/>
+	</collection>
+	<collection name="leset_fairyhollow2_collection" code="LE10" type="LE" startDate="11/10/2011" endDate="11/17/2011">
+		<collectable code="0CZ" numneeded="1"/>
+		<collectable code="0C0" numneeded="1"/>
+		<collectable code="0Hi" numneeded="1"/>
+		<collectable code="0Hj" numneeded="1"/>	
+		<collectable code="0Hh" numneeded="1"/>
+		<collectable code="0Hd" numneeded="1"/>
+		<collectable code="0G8" numneeded="1"/>
+		<collectable code="0G1" numneeded="1"/>
+		<collectable code="0Du" numneeded="1"/>
+		<tradeInReward gift="fallfairyforest"/>
+	</collection>
+	<collection name="leset_autumn_collection" code="LE11" type="LE" startDate="11/17/2011" endDate="11/24/2011">
+		<collectable code="0GO" numneeded="1"/>
+		<collectable code="0GP" numneeded="1"/>
+		<collectable code="0GJ" numneeded="1"/>
+		<collectable code="0GE" numneeded="1"/>	
+		<collectable code="0GB" numneeded="1"/>
+		<collectable code="0Gz" numneeded="1"/>
+		<collectable code="0Gy" numneeded="1"/>
+		<tradeInReward gift="gnomenativeamerican"/>
+	</collection>
+	<collection name="leset_winterholiday_collection" code="LE12" type="LE" startDate="11/24/2011" endDate="12/01/2011">
+		<collectable code="0Lg" numneeded="1"/>
+		<collectable code="0Lh" numneeded="1"/>
+		<collectable code="0Lc" numneeded="1"/>
+		<collectable code="0K7" numneeded="1"/>	
+		<collectable code="0K4" numneeded="1"/>
+		<collectable code="0KY" numneeded="1"/>
+		<collectable code="0KX" numneeded="1"/>
+		<tradeInReward gift="xwwgnome_ornament"/>
+	</collection>
+	<collection name="leset_winterholiday2_collection" code="LE13" type="LE" startDate="12/01/2011" endDate="12/08/2011">
+		<collectable code="0Mo" numneeded="1"/>
+		<collectable code="0Mp" numneeded="1"/>
+		<collectable code="0Ml" numneeded="1"/>
+		<collectable code="0Mj" numneeded="1"/>	
+		<collectable code="0Mg" numneeded="1"/>
+		<collectable code="0Md" numneeded="1"/>
+		<collectable code="0L7" numneeded="1"/>
+		<collectable code="0L5" numneeded="1"/>
+		<collectable code="0xV" numneeded="1"/>
+		<tradeInReward gift="xww_deco_ciderwaterfall"/>
+	</collection>
+	<collection name="leset_winterholiday3_collection" code="LE14" type="LE" startDate="12/08/2011" endDate="12/15/2011">
+		<collectable code="0L1" numneeded="1"/>
+		<collectable code="0L2" numneeded="1"/>
+		<collectable code="0LY" numneeded="1"/>
+		<collectable code="0LV" numneeded="1"/>	
+		<collectable code="0F9" numneeded="1"/>
+		<collectable code="0F6" numneeded="1"/>
+		<collectable code="0F4" numneeded="1"/>
+		<collectable code="0FT" numneeded="1"/>
+		<collectable code="0CG" numneeded="1"/>
+		<tradeInReward gift="xwwcandycanehouse"/>
+	</collection>
+	<collection name="leset_winterholiday4_collection" code="LE15" type="LE" startDate="12/15/2011" endDate="12/22/2011">
+		<collectable code="0NI" numneeded="1"/>
+		<collectable code="0NJ" numneeded="1"/>
+		<collectable code="0NN" numneeded="1"/>
+		<collectable code="0NO" numneeded="1"/>	
+		<collectable code="0NS" numneeded="1"/>
+		<collectable code="0NV" numneeded="1"/>
+		<collectable code="0NZ" numneeded="1"/>
+		<collectable code="0N1" numneeded="1"/>
+		<collectable code="0Od" numneeded="1"/>
+		<tradeInReward gift="gnomesnowboard"/>
+	</collection>
+	<collection name="leset_winterholiday5_collection" code="LE16" type="LE" startDate="12/22/2011" endDate="12/29/2011">
+		<collectable code="0Pe" numneeded="1"/>
+		<collectable code="0Pf" numneeded="1"/>
+		<collectable code="0Pi" numneeded="1"/>
+		<collectable code="0Pk" numneeded="1"/>	
+		<collectable code="0Pn" numneeded="1"/>
+		<collectable code="0Pq" numneeded="1"/>
+		<collectable code="0Pv" numneeded="1"/>
+		<collectable code="0R0" numneeded="1"/>
+		<collectable code="0RX" numneeded="1"/>
+		<tradeInReward gift="gazeboholiday"/>
+	</collection>
+	<collection name="leset_newyear_collection" code="LE17" type="LE" startDate="12/29/2011" endDate="1/05/2012">
+		<collectable code="0R3" numneeded="1"/>
+		<collectable code="0R4" numneeded="1"/>
+		<collectable code="0R7" numneeded="1"/>
+		<collectable code="0R8" numneeded="1"/>	
+		<collectable code="0Sc" numneeded="1"/>
+		<collectable code="0Sg" numneeded="1"/>
+		<collectable code="0Sm" numneeded="1"/>
+		<collectable code="0Sr" numneeded="1"/>
+		<collectable code="0St" numneeded="1"/>
+		<tradeInReward gift="fountain_firework"/>
+	</collection>
+	<collection name="leset_Vday2_collection" code="LE19" type="LE" startDate="02/02/2012" endDate="02/09/2012">
+		<collectable code="09P" numneeded="1"/>
+		<collectable code="09Q" numneeded="1"/>
+		<collectable code="1as" numneeded="1"/>
+		<collectable code="1av" numneeded="1"/>	
+		<collectable code="1bP" numneeded="1"/>
+		<collectable code="1cJ" numneeded="1"/>
+		<tradeInReward gift="outdoorlovecafe"/>
+	</collection>
+	<collection name="leset_Vday_collection" code="LE18" type="LE" startDate="01/26/2012" endDate="02/02/2012">
+		<collectable code="08T" numneeded="1"/>
+		<collectable code="08U" numneeded="1"/>
+		<collectable code="08V" numneeded="1"/>
+		<collectable code="080" numneeded="1"/>	
+		<collectable code="084" numneeded="1"/>
+		<collectable code="085" numneeded="1"/>
+		<collectable code="087" numneeded="1"/>
+	    <tradeInReward gift="pinkswanlake"/>
+	</collection>
+
+	<!-- Animal Breeding Collections -->
+	<!--
+		NOTE - To group the collections in the ui the names are composed as
+		<pattern>_<color>
+
+		Use this convention for regular collections and avoid using underscores
+		for special collections to prevent showing the color picker frame
+	-->
+
+	<!-- Dots Collections -->
+	<collection name='dotsmaroon' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='maroon' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='maroon' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='dots' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='emerald' gene='dots'/>
+	</collection>
+
+	<collection name='dotsnavy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='dots' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='fuchsia' gene='dots'/>
+	</collection>
+
+	<collection name='dotsolive' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='dots' numneeded="1"/>
+		<collectable tint='olive' pattern='tangerine' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='fuchsia' gene='daisys'/>
+	</collection>
+
+	<collection name='dotsgold' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='red' gene='daisys'/>
+	</collection>
+
+	<collection name='dotsorange' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='red' gene='dots'/>
+	</collection>
+
+	<!-- Daisys Collections -->
+	<collection name='daisysmaroon' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='maroon' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='maroon' pattern='emerald' gene='daisys' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='emerald' gene='daisys'/>
+	</collection>
+
+	<collection name='daisysnavy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='daisys' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='yellow' gene='stars'/>
+	</collection>
+
+	<collection name='daisysolive' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='red' gene='stars'/>
+	</collection>
+
+	<collection name='daisysgold' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='daisys' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='fuchsia' gene='daisys'/>
+	</collection>
+
+	<collection name='daisysorange' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='emerald' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='tangerine' gene='daisys'/>
+	</collection>
+
+	<!-- Stars Collections -->
+	<collection name='starsmaroon' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='maroon' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='maroon' pattern='emerald' gene='stars' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='yellow' gene='stars'/>
+	</collection>
+
+	<collection name='starsnavy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='stars' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='yellow' gene='stars'/>
+	</collection>
+
+	<collection name='starsolive' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='tangerine' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='starsgold' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='starsorange' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='emerald' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='emerald' gene='stars'/>
+	</collection>
+
+
+	<!-- Lightning Collections -->
+	<collection name='lightningmaroon' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='lightning' numneeded="1"/>
+		<collectable tint='maroon' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='maroon' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='lightningnavy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='red' gene='lightning' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='lightningolive' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='lightning' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='olive' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='fuchsia' gene='music'/>
+	</collection>
+
+	<collection name='lightninggold' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='red' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='red' gene='lightning'/>
+	</collection>
+
+	<collection name='lightningorange' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='red' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='tangerine' gene='music'/>
+	</collection>
+
+	<!-- Melody Collections -->
+	<collection name='musicmaroon' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='maroon' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='maroon' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='red' gene='stars'/>
+	</collection>
+
+	<collection name='musicnavy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='red' gene='music'/>
+	</collection>
+
+	<collection name='musicolive' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='tangerine' gene='lightning'/>
+	</collection>
+
+	<collection name='musicgold' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='emerald' gene='daisys'/>
+	</collection>
+
+	<collection name='musicorange' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='yellow' gene='stars'/>
+	</collection>
+
+	<collection name='stormcloud' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='navy' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='fuchsia' gene='music'/>
+	</collection>
+
+	<collection name='teamamerica' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='stars' numneeded="2"/>
+		<collectable tint='navy' pattern='red' gene='stars' numneeded="2"/>
+		<collectable tint='gold' pattern='red' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='confetti' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='tangerine' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='red' gene='dots' numneeded="2"/>
+		<collectable tint='navy' pattern='yellow' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='emerald' gene='dots'/>
+	</collection>
+
+	<collection name='holidayspirit' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='olive' pattern='red' gene='dots' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='dots' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='red' gene='daisys'/>
+	</collection>
+
+	<collection name='smellrainbow' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='fuchsia' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='red' gene='daisys' numneeded="1"/>
+		<collectable tint='gold' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='yellow' gene='stars'/>
+	</collection>
+
+	<collection name='springbouquet' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='olive' pattern='red' gene='daisys' numneeded="2"/>
+		<collectable tint='orange' pattern='yellow' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='daisys' numneeded="2"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='red' gene='stars'/>
+	</collection>
+
+	<collection name='stargazing' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='stars' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='yellow' gene='lightning'/>
+	</collection>
+
+	<collection name='redalert' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='lightning' numneeded="3"/>
+		<collectable tint='orange' pattern='red' gene='lightning' numneeded="2"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='tangerine' gene='music'/>
+	</collection>
+
+	<collection name='disco' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='tangerine' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='emerald' gene='music'/>
+	</collection>
+
+	<collection name='colorfulmusic' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='tangerine' gene='music' numneeded="1"/>
+		<collectable tint='orange' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='fuchsia' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='orange' pattern='tangerine' gene='daisys'/>
+	</collection>
+
+	<collection name='orangeyouhappy' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='tangerine' gene='dots' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='music' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='yellow' gene='music'/>
+	</collection>
+
+	<collection name='earth' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='navy' pattern='emerald' gene='dots' numneeded="1"/>
+		<collectable tint='navy' pattern='emerald' gene='daisys' numneeded="2"/>
+		<collectable tint='navy' pattern='emerald' gene='stars' numneeded="2"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='tangerine' gene='daisys'/>
+	</collection>
+
+	<collection name='goldrecord' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='gold' pattern='yellow' gene='stars' numneeded="2"/>
+		<collectable tint='gold' pattern='yellow' gene='music' numneeded="3"/>
+		<tradeInReward gift="turtle_male" tint='olive' pattern='emerald' gene='lightning'/>
+	</collection>
+
+	<collection name='starburst' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='red' gene='stars' numneeded="1"/>
+		<collectable tint='orange' pattern='tangerine' gene='stars' numneeded="1"/>
+		<collectable tint='gold' pattern='yellow' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='emerald' gene='lightning' numneeded="2"/>
+		<tradeInReward gift="turtle_male" tint='gold' pattern='fuchsia' gene='lightning'/>
+	</collection>
+
+	<collection name='electricparade' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='orange' pattern='emerald' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='fuchsia' gene='lightning' numneeded="1"/>
+		<collectable tint='maroon' pattern='yellow' gene='music' numneeded="1"/>
+		<collectable tint='olive' pattern='red' gene='music' numneeded="1"/>
+		<collectable tint='navy' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='maroon' pattern='fuchsia' gene='music'/>
+	</collection>
+
+	<collection name='colorpalette' type='breeding' featureName='turtlepen_finished'>
+		<collectable tint='maroon' pattern='tangerine' gene='daisys' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='stars' numneeded="1"/>
+		<collectable tint='olive' pattern='fuchsia' gene='dots' numneeded="1"/>
+		<collectable tint='maroon' pattern='tangerine' gene='lightning' numneeded="1"/>
+		<collectable tint='gold' pattern='emerald' gene='daisys' numneeded="1"/>
+		<tradeInReward gift="turtle_male" tint='navy' pattern='tangerine' gene='music'/>
+	</collection>
+
+	<collection name='fishing_basic' type='fishing'>
+		<collectable name='walleye' rarity="common" masterySign="masterwalleye" />
+		<collectable name='carp' rarity="common" masterySign="mastercarp"/>
+		<collectable name='crappie' rarity="common" masterySign="mastercrappie" />
+		<collectable name='pike' rarity="uncommon" masterySign="masterpike" />
+		<collectable name='bluegill' rarity="uncommon" masterySign="masterbluegill" />
+		<collectable name='kokanee' rarity="uncommon" masterySign="masterkokanee" />
+		<collectable name='anguilla_eel' rarity="rare" masterySign="masteranguillaeel" />
+		<collectable name='sturgeon' rarity="rare" masterySign="mastersturgeon" />
+	</collection>
+
+	<collection name='fishing_trout' type='fishing'>
+		<collectable name='trout_rainbow' rarity="common" masterySign="masterrainbowtrout" />
+		<collectable name='trout_brown' rarity="common" masterySign="masterbrowntrout" />
+		<collectable name='trout_lake' rarity="common" masterySign="masterlaketrout" />
+		<collectable name='trout_brook' rarity="uncommon" masterySign="masterbrooktrout" />
+		<collectable name='trout_goldenrainbow' rarity="uncommon" masterySign="mastergoldenrainbowtrout" />
+		<collectable name='trout_cutthroat' rarity="uncommon" masterySign="mastercutthroattrout" />
+		<collectable name='trout_dollyvarden' rarity="rare" masterySign="masterdollyvarden" />
+		<collectable name='trout_steelhead' rarity="rare" masterySign="mastersteelhead" />
+	</collection>
+
+	<collection name='fishing_bass' type='fishing'>
+		<collectable name='bass_smallmouth' rarity="common" masterySign="mastersmallmouthbass" />
+		<collectable name='bass_largemouth' rarity="common" masterySign="masterlargemouthbass" />
+		<collectable name='bass_white' rarity="common" masterySign="masterwhitebass" />
+		<collectable name='bass_striped' rarity="uncommon" masterySign="masterstripedbass_1" />
+		<collectable name='bass_spotted' rarity="uncommon" masterySign="masterspottedbass" />
+		<collectable name='bass_rock' rarity="uncommon" masterySign="masterrockbass" />
+		<collectable name='bass_redeye' rarity="rare" masterySign="masterredeyebass" />
+		<collectable name='bass_suwanee' rarity="rare" masterySign="mastersuwaneebass" />
+	</collection>
+
+	<collection name='fishing_salmon' type='fishing'>
+		<collectable name='salmon_chum' rarity="common" masterySign="masterchumsalmon" />
+		<collectable name='salmon_atlantic' rarity="common" masterySign="masteratlanticsalmon" />
+		<collectable name='salmon_pink' rarity="common" masterySign="masterpinksalmon" />
+		<collectable name='salmon_smoked' rarity="uncommon" masterySign="mastersmokedsalmon" />
+		<collectable name='salmon_coho' rarity="uncommon" masterySign="mastercohosalmon" />
+		<collectable name='salmon_sockeye' rarity="uncommon" masterySign="mastersockeyesalmon" />
+		<collectable name='salmon_whiteking' rarity="rare" masterySign="mastersalmonwhiteking" />
+		<collectable name='salmon_chinook' rarity="rare" masterySign="mastersalmonchinook" />
+	</collection>
+
+	<collection name='fishing_boot' type='fishing'>
+		<collectable name='boot_work' rarity="common" masterySign="masterworkboot" />
+		<collectable name='boot_rubber' rarity="common" masterySign="masterrubberboot" />
+		<collectable name='boot_ugglike' rarity="common" masterySign="masterugglikeboot" />
+		<collectable name='boot_hiking' rarity="uncommon" masterySign="masterhikingboot" />
+		<collectable name='boot_snow' rarity="uncommon" masterySign="mastersnowboot" />
+		<collectable name='boot_motorcycle' rarity="uncommon" masterySign="mastermotorcycleboot" />
+		<collectable name='boot_kneehigh' rarity="rare" masterySign="masterkneehighboot" />
+		<collectable name='boot_cowboy' rarity="rare" masterySign="mastercowboyboot" />
+	</collection>
+
+</collections>

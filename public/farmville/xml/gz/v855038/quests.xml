@@ -1,0 +1,2253 @@
+<quests>
+
+	<displayOrder>
+        <quest>Q68</quest>
+        <quest>Q69</quest>
+        <quest>Q70</quest>
+		<quest>Q67</quest>
+		<quest>Q64</quest>
+		<quest>Q65</quest>
+		<quest>Q66</quest>
+		<quest>Q63</quest>
+		<quest>Q18</quest>
+		<quest>Q19</quest>
+		<quest>Q20</quest>
+		<quest>Q21</quest>
+		<quest>Q22</quest>
+		<quest>Q23</quest>
+		<quest>Q24</quest>
+		<quest>Q25</quest>
+		<quest>Q26</quest>
+		<quest>Q27</quest>
+		<quest>Q28</quest>
+		<quest>Q29</quest>
+		<quest>Q30</quest>
+		<quest>Q31</quest>
+		<quest>Q32</quest>
+		<quest>Q33</quest>
+		<quest>Q34</quest>
+		<quest>Q35</quest>
+		<quest>Q36</quest>
+		<quest>Q37</quest>
+		<quest>Q38</quest>
+		<quest>Q39</quest>
+		<quest>Q40</quest>
+		<quest>Q41</quest>
+		<quest>Q42</quest>
+		<quest>Q43</quest>
+		<quest>Q44</quest>
+		<quest>Q45</quest>
+		<quest>Q46</quest>
+		<quest>Q47</quest>
+		<quest>Q48</quest>
+		<quest>Q49</quest>
+		<quest>Q50</quest>
+		<quest>Q51</quest>
+		<quest>Q52</quest>
+		<quest>Q53</quest>
+		<quest>Q54</quest>
+		<quest>Q55</quest>
+		<quest>Q56</quest>
+		<quest>Q57</quest>
+		<quest>Q58</quest>
+		<quest>Q59</quest>
+		<quest>Q60</quest>
+		<quest>Q61</quest>
+		<quest>Q62</quest>
+		<quest>Q17</quest>
+		<quest>Q16</quest>
+		<quest>Q11</quest>
+		<quest>Q4</quest>	
+		<quest>Q13</quest>
+		<quest>Q9</quest>
+		<quest>Q5</quest>
+		<!-- level locked ones go below the fold -->
+		<quest>Q14</quest>
+		<quest>Q12</quest>
+		<quest>Q10</quest>		
+		<quest>Q3</quest>
+		<quest>Q2</quest>
+		<quest>Q8</quest>
+		<quest>Q1</quest>
+		<quest>Q6</quest>
+		<quest>Q7</quest>
+	</displayOrder>
+	
+	<!-- Quests -->
+	<quest id="Q1" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="pumpkin_pie_blowout_Title" description="pumpkin_pie_blowout_Description" story="pumpkin_pie_blowout_Story" complete="pumpkin_pie_blowout_Complete" fail="pumpkin_pie_blowout_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_bakesale.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_dresslady.png"/>
+		<completionRequirements name="bronze" timeLimit="1.583">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<reward type="generic" coins="340" experience="387"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<reward type="generic" coins="408" experience="464"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".6667">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<reward type="generic" item="chefstatue" coins="462" experience="527"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q2" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="stirring_things_up_Title" description="stirring_things_up_Description" story="stirring_things_up_Story" complete="stirring_things_up_Complete" fail="stirring_things_up_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_stirringthingsup.png"/>		
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="rice" many="750"/>
+			<requirement action="seed" type="rice" many="750"/>
+			<requirement action="harvest" type="peppers" many="500"/>
+			<requirement action="seed" type="peppers" many="500"/>
+			<requirement action="harvest" type="soybeans" many="500"/>
+			<requirement action="seed" type="soybeans" many="500"/>
+			<reward type="generic" coins="637" experience="722"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="rice" many="750"/>
+			<requirement action="seed" type="rice" many="750"/>
+			<requirement action="harvest" type="peppers" many="500"/>
+			<requirement action="seed" type="peppers" many="500"/>
+			<requirement action="harvest" type="soybeans" many="500"/>
+			<requirement action="seed" type="soybeans" many="500"/>
+			<reward type="generic" coins="764" experience="866"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="rice" many="750"/>
+			<requirement action="seed" type="rice" many="750"/>
+			<requirement action="harvest" type="peppers" many="500"/>
+			<requirement action="seed" type="peppers" many="500"/>
+			<requirement action="harvest" type="soybeans" many="500"/>
+			<requirement action="seed" type="soybeans" many="500"/>
+			<reward type="generic" item="pagodamini" coins="866" experience="983"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q3" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="frantic_for_flowers_Title" description="frantic_for_flowers_Description" story="frantic_for_flowers_Story" complete="frantic_for_flowers_Complete" fail="frantic_for_flowers_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_franticforflowers.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_flower.png"/>
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="tulipred" many="1500"/>
+			<requirement action="seed" type="tulipred" many="1500"/>
+			<reward type="generic" coins="665" experience="760"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="tulipred" many="1500"/>
+			<requirement action="seed" type="tulipred" many="1500"/>
+			<reward type="generic" coins="798" experience="912"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="tulipred" many="1500"/>
+			<requirement action="seed" type="tulipred" many="1500"/>
+			<reward type="generic" item="gazebowedding" coins="904" experience="1035"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q4" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="a_very_berry_field_trip_Title" description="a_very_berry_field_trip_Description" story="a_very_berry_field_trip_Story" complete="a_very_berry_field_trip_Complete" fail="a_very_berry_field_trip_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_fruitsalad.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_MrT.png"/>		
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="750"/>
+			<requirement action="seed" type="grapes" many="750"/>
+			<reward type="generic" coins="637" experience="722"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="750"/>
+			<requirement action="seed" type="grapes" many="750"/>
+			<reward type="generic" coins="764" experience="866"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="750"/>
+			<requirement action="seed" type="grapes" many="750"/>
+			<reward type="generic" item="tractorschoolbus" coins="866" experience="983"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q5" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="tossin_tomatoes_Title" description="tossin_tomatoes_Description" story="tossin_tomatoes_Story" complete="tossin_tomatoes_Complete" fail="tossin_tomatoes_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_tossintomatoes.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_tomato.png"/>
+		<completionRequirements name="bronze" timeLimit="1.583">
+			<requirement action="harvest" type="tomato" many="1300"/>
+			<requirement action="seed" type="tomato" many="1300"/>
+			<reward type="generic" coins="373" experience="373"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1">
+			<requirement action="harvest" type="tomato" many="1300"/>
+			<requirement action="seed" type="tomato" many="1300"/>
+			<reward type="generic" coins="396" experience="448"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".6667">
+			<requirement action="harvest" type="tomato" many="1300"/>
+			<requirement action="seed" type="tomato" many="1300"/>
+			<reward type="generic" item="elephant_circus" coins="449" experience="509"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q6" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="a_pack_of_pickled_patty_pans_Title" description="a_pack_of_pickled_patty_pans_Description" story="a_pack_of_pickled_patty_pans_Story" complete="a_pack_of_pickled_patty_pans_Complete" fail="a_pack_of_pickled_patty_pans_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pickledpattipan.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_dude.png"/>
+		<completionRequirements name="bronze" timeLimit="3.25">
+			<requirement action="harvest" type="squashpetitpan" many="1500"/>
+			<requirement action="seed" type="squashpetitpan" many="1500"/>
+			<reward type="generic" coins="455" experience="520"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2">
+			<requirement action="harvest" type="squashpetitpan" many="1500"/>
+			<requirement action="seed" type="squashpetitpan" many="1500"/>
+			<reward type="generic" coins="546" experience="624"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.333">
+			<requirement action="harvest" type="squashpetitpan" many="1500"/>
+			<requirement action="seed" type="squashpetitpan" many="1500"/>
+			<reward type="generic" item="mailtruck" coins="619" experience="708"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q7" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="town_greening_Title" description="town_greening_Description" story="town_greening_Story" complete="town_greening_Complete" fail="town_greening_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_towngreening.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_sweaty.png"/>
+		<completionRequirements name="bronze" timeLimit="2.416">
+			<requirement action="harvest" type="bluemorningglory" many="1450"/>
+			<requirement action="seed" type="bluemorningglory" many="1450"/>
+			<reward type="generic" coins="380" experience="433"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.5">
+			<requirement action="harvest" type="bluemorningglory" many="1450"/>
+			<requirement action="seed" type="bluemorningglory" many="1450"/>
+			<reward type="generic" coins="455" experience="519"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1">
+			<requirement action="harvest" type="bluemorningglory" many="1450"/>
+			<requirement action="seed" type="bluemorningglory" many="1450"/>
+			<reward type="generic" item="fvmonument" coins="516" experience="589"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q8" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="fashion_bug_Title" description="fashion_bug_Description" story="fashion_bug_Story" complete="fashion_bug_Complete" fail="fashion_bug_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_fashionbug.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_blond.png"/>
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="grapes" many="1275"/>
+			<requirement action="seed" type="grapes" many="1275"/>
+			<reward type="generic" coins="622" experience="703"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="grapes" many="1275"/>
+			<requirement action="seed" type="grapes" many="1275"/>
+			<reward type="generic" coins="747" experience="844"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="grapes" many="1275"/>
+			<requirement action="seed" type="grapes" many="1275"/>
+			<reward type="generic" item="sheep_grapes" coins="846" experience="958"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q9" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="rice_paper_Title" description="rice_paper_Description" story="rice_paper_Story" complete="rice_paper_Complete" fail="rice_paper_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_ricepaper.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_MrT.png"/>		
+		<completionRequirements name="bronze" timeLimit="2">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" coins="330" experience="380"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.2">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" coins="400" experience="455"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".7916">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" item="lanterntree" coins="450" experience="515"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q10" type="basic"  requiredLevel="22" requiredJoinLevel="22" repeatable="true" maxUsers="10" deprecated="false" isNew="false" >
+		<text title="baby_bunny_rescue_Title" description="baby_bunny_rescue_Description" story="baby_bunny_rescue_Story" complete="baby_bunny_rescue_Complete" fail="baby_bunny_rescue_Fail" />
+		<icon url="assets/newsfeed/socialmissions_babybunnyrescue.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_blond.png"/>		
+		<completionRequirements name="bronze" timeLimit="2.42">
+			<requirement action="harvest" type="carrot" many="1350"/>
+			<requirement action="seed" type="carrot" many="1350"/>
+			<reward type="generic" coins="364" experience="430"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.46">
+			<requirement action="harvest" type="carrot" many="1350"/>
+			<requirement action="seed" type="carrot" many="1350"/>
+			<reward type="generic" coins="440" experience="515"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".96">
+			<requirement action="harvest" type="carrot" many="1350"/>
+			<requirement action="seed" type="carrot" many="1350"/>
+			<reward type="generic" item="rabbit_gray" coins="495" experience="590"/>
+		</completionRequirements>
+	</quest>	
+	
+	<quest id="Q11" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" >
+		<text title="peanut_butter_jelly_time_Title" description="peanut_butter_jelly_time_Description" story="peanut_butter_jelly_time_Story" complete="peanut_butter_jelly_time_Complete" fail="peanut_butter_jelly_time_Fail" />
+		<icon url="assets/newsfeed/socialmissions_peanutbutterjellytime.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_pilot.png"/>		
+		<completionRequirements name="bronze" timeLimit="3.25">
+			<requirement action="harvest" type="peanuts" many="800"/>
+			<requirement action="seed" type="peanuts" many="800"/>
+			<requirement action="harvest" type="strawberry" many="1200"/>
+			<requirement action="seed" type="strawberry" many="1200"/>
+			<reward type="generic" coins="455" experience="545"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2">
+			<requirement action="harvest" type="peanuts" many="800"/>
+			<requirement action="seed" type="peanuts" many="800"/>
+			<requirement action="harvest" type="strawberry" many="1200"/>
+			<requirement action="seed" type="strawberry" many="1200"/>
+			<reward type="generic" coins="545" experience="655"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.333">
+			<requirement action="harvest" type="peanuts" many="800"/>
+			<requirement action="seed" type="peanuts" many="800"/>
+			<requirement action="harvest" type="strawberry" many="1200"/>
+			<requirement action="seed" type="strawberry" many="1200"/>
+			<reward type="generic" item="biplanered" coins="620" experience="745"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q12" type="basic"  requiredLevel="31" requiredJoinLevel="28" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="tea_party_Title" description="tea_party_Description" story="tea_party_Story" complete="tea_party_Complete" fail="tea_party_Fail" />
+		<icon url="assets/newsfeed/socialmissions_teaparty.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>	
+		<completionRequirements name="bronze" timeLimit="2">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="sugarcane" many="250"/>
+			<requirement action="seed" type="sugarcane" many="250"/>
+			<reward type="generic" coins="335" experience="390"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.2">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="sugarcane" many="250"/>
+			<requirement action="seed" type="sugarcane" many="250"/>
+			<reward type="generic" coins="400" experience="465"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".7916">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="sugarcane" many="250"/>
+			<requirement action="seed" type="sugarcane" many="250"/>
+			<reward type="generic" item="aliceteatable" coins="455" experience="535"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q13" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" limitedEditionStart="5/14/2010" limitedEditionEnd="6/30/2010" isNew="false">
+		<text title="limited_cupcakes_Title" description="limited_cupcakes_Description" story="limited_cupcakes_Story" complete="limited_cupcakes_Complete" fail="limited_cupcakes_Fail" />
+		<icon url="assets/newsfeed/socialmissions_cupcake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_dude.png"/>	
+		<completionRequirements name="bronze" timeLimit="1.583">
+			<requirement action="harvest" type="cupcake" many="600"/>
+			<requirement action="seed" type="cupcake" many="600"/>>
+			<reward type="generic" coins="245" experience="260"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1">
+			<requirement action="harvest" type="cupcake" many="600"/>
+			<requirement action="seed" type="cupcake" many="600"/>	
+			<reward type="generic" coins="295" experience="315"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".6667">
+			<requirement action="harvest" type="cupcake" many="600"/>
+			<requirement action="seed" type="cupcake" many="600"/>	
+			<reward type="generic" item="sheep_birthday" coins="365" experience="405"/>
+		</completionRequirements>
+	</quest>	
+	
+	<quest id="Q14" type="basic"  requiredLevel="34" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="hottest_chili_in_town_Title" description="hottest_chili_in_town_Description" story="hottest_chili_in_town_Story" complete="hottest_chili_in_town_Complete" fail="hottest_chili_in_town_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_hottestchili.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_sweaty.png"/>		
+		<completionRequirements name="bronze" timeLimit="2.42">
+			<requirement action="harvest" type="tomato" many="600"/>
+			<requirement action="seed" type="tomato" many="600"/>
+			<requirement action="harvest" type="onion" many="300"/>
+			<requirement action="seed" type="onion" many="300"/>
+			<requirement action="harvest" type="ghostchili" many="800"/>
+			<requirement action="seed" type="ghostchili" many="800"/>
+			<reward type="generic" coins="355" experience="418"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.46">
+			<requirement action="harvest" type="tomato" many="600"/>
+			<requirement action="seed" type="tomato" many="600"/>
+			<requirement action="harvest" type="onion" many="300"/>
+			<requirement action="seed" type="onion" many="300"/>
+			<requirement action="harvest" type="ghostchili" many="800"/>
+			<requirement action="seed" type="ghostchili" many="800"/>
+			<reward type="generic" coins="426" experience="502"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit=".96">
+			<requirement action="harvest" type="tomato" many="600"/>
+			<requirement action="seed" type="tomato" many="600"/>
+			<requirement action="harvest" type="onion" many="300"/>
+			<requirement action="seed" type="onion" many="300"/>
+			<requirement action="harvest" type="ghostchili" many="800"/>
+			<requirement action="seed" type="ghostchili" many="800"/>
+			<reward type="generic" item="joshuatree" coins="486" experience="572"/>
+		</completionRequirements>
+	</quest>		
+
+	<quest id="Q16" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="bakery_delivery_Title" description="bakery_delivery_Description" story="bakery_delivery_Story" complete="bakery_delivery_Complete" fail="bakery_delivery_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_bakerydelivery.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_dude.png"/>	
+		<completionRequirements name="bronze" timeLimit="3.25">
+			<requirement action="harvest" type="wheat" many="1450"/>
+			<requirement action="seed" type="wheat" many="1450"/>
+			<reward type="generic" coins="425" experience="520"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2">
+			<requirement action="harvest" type="wheat" many="1450"/>
+			<requirement action="seed" type="wheat" many="1450"/>
+			<reward type="generic" coins="535" experience="620"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.333">
+			<requirement action="harvest" type="wheat" many="1450"/>
+			<requirement action="seed" type="wheat" many="1450"/>
+			<reward type="generic" item="flatbedtruck" coins="610" experience="700"/>
+		</completionRequirements>
+	</quest>			
+
+		<!-- England CO OP Job Data -->
+	
+	<quest id="Q64" type="basic" world="england" requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="cornflower_job_Title" description="cornflower_job_Description" story="cornflower_job_Story" complete="cornflower_job_Complete" fail="cornflower_job_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_cornflower.png"/>
+		<questGiverImage url="assets/dialogs/4d_elements/Questing/NPC_standing_agatha_happy.png"/>
+		<completionRequirements name="bronze" timeLimit="3.25">
+			<requirement action="harvest" type="cornflower" many="1200"/>
+			<requirement action="seed" type="cornflower" many="1200"/>
+			<reward type="generic" coins="425" experience="450"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2">
+			<requirement action="harvest" type="cornflower" many="1200"/>
+			<requirement action="seed" type="cornflower" many="1200"/>
+			<reward type="generic" coins="500" experience="500"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.291">
+			<requirement action="harvest" type="cornflower" many="1200"/>
+			<requirement action="seed" type="cornflower" many="1200"/>
+			<reward type="generic" item="xukpottedcornflower" coins="575" experience="575"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q65" type="basic" world="england" requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="great_rabbit_caper_Title" description="great_rabbit_caper_Description" story="great_rabbit_caper_Story" complete="great_rabbit_caper_Complete" fail="great_rabbit_caper_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_rabbitcaper.png"/>
+		<questGiverImage url="assets/dialogs/4d_elements/Questing/NPC_standing_lily_happy.png"/>
+		<completionRequirements name="bronze" timeLimit="3.666">
+			<requirement action="harvest" type="radish" many="700"/>
+			<requirement action="seed" type="radish" many="700"/>
+			<requirement action="harvest" type="turnips" many="700"/>
+			<requirement action="seed" type="turnips" many="700"/>
+			<reward type="generic" coins="700" experience="700"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.2">
+			<requirement action="harvest" type="radish" many="700"/>
+			<requirement action="seed" type="radish" many="700"/>
+			<requirement action="harvest" type="turnips" many="700"/>
+			<requirement action="seed" type="turnips" many="700"/>
+			<reward type="generic" coins="825" experience="825"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.4583">
+			<requirement action="harvest" type="radish" many="700"/>
+			<requirement action="seed" type="radish" many="700"/>
+			<requirement action="harvest" type="turnips" many="700"/>
+			<requirement action="seed" type="turnips" many="700"/>
+			<reward type="generic" item="rabbit_englishspot_brown" coins="950" experience="950"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q66" type="basic" world="england" requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="aster_job_Title" description="aster_job_Description" story="aster_job_Story" complete="aster_job_Complete" fail="aster_job_Fail"/>
+		<icon url="assets/newsfeed/quest_asters_henry.png"/>
+		<questGiverImage url="assets/dialogs/4d_elements/Questing/NPC_standing_henry_happy.png"/>
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="asterhotpink" many="1200"/>
+			<requirement action="seed" type="asterhotpink" many="1200"/>
+			<reward type="generic" coins="425" experience="450"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="asterhotpink" many="1200"/>
+			<requirement action="seed" type="asterhotpink" many="1200"/>
+			<reward type="generic" coins="500" experience="500"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="asterhotpink" many="1200"/>
+			<requirement action="seed" type="asterhotpink" many="1200"/>
+			<reward type="generic" item="xuk_animal_love_potion" coins="575" experience="575"/>
+		</completionRequirements>
+	</quest>
+
+	
+	<!-- BUSHEL CO OP Job Data -->
+	
+	<!-- 
+	@requiredHostItemName means the host user must have this item placed in the world to start the quest 
+	helpers are not required to have the host item on their farm to start the quest, but they will not be able
+	to see or start a quest with that requirement except by joining a quest already started.
+	-->
+	
+	<!-- Winery Jobs -->
+	
+	<quest id="Q18" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_sweetSake_Title" description="bushelJob_sweetSake_Description" story="bushelJob_sweetSake_Story" complete="bushelJob_sweetSake_Complete" fail="bushelJob_sweetSake_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_sweetsake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="rice" many="1400"/>
+			<requirement action="seed" type="rice" many="1400"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="w0" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="rice" many="1400"/>
+			<requirement action="seed" type="rice" many="1400"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="w0" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="rice" many="1400"/>
+			<requirement action="seed" type="rice" many="1400"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="w0" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q19" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_whiteSangria_Title" description="bushelJob_whiteSangria_Description" story="bushelJob_whiteSangria_Story" complete="bushelJob_whiteSangria_Complete" fail="bushelJob_whiteSangria_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_whitetablewine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="strawberry" many="800"/>
+			<requirement action="seed" type="strawberry" many="800"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="w1" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="strawberry" many="800"/>
+			<requirement action="seed" type="strawberry" many="800"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="w1" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="strawberry" many="800"/>
+			<requirement action="seed" type="strawberry" many="800"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="w1" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q20" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_redTableWine_Title" description="bushelJob_redTableWine_Description" story="bushelJob_redTableWine_Story" complete="bushelJob_redTableWine_Complete" fail="bushelJob_redTableWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_redtablewine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="grapewhite" many="2000"/>
+			<requirement action="seed" type="grapewhite" many="2000"/>
+			<requirement action="harvest" type="grapes" many="1400"/>
+			<requirement action="seed" type="grapes" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="w2" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="grapewhite" many="2000"/>
+			<requirement action="seed" type="grapewhite" many="2000"/>
+			<requirement action="harvest" type="grapes" many="1400"/>
+			<requirement action="seed" type="grapes" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="w2" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="grapewhite" many="2000"/>
+			<requirement action="seed" type="grapewhite" many="2000"/>
+			<requirement action="harvest" type="grapes" many="1400"/>
+			<requirement action="seed" type="grapes" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="w2" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q21" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_fruitWine_Title" description="bushelJob_fruitWine_Description" story="bushelJob_fruitWine_Story" complete="bushelJob_fruitWine_Complete" fail="bushelJob_fruitWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_tropicalwine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="3.45">
+			<requirement action="harvest" type="raspberry" many="1400"/>
+			<requirement action="seed" type="raspberry" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<reward type="generic" coins="350" experience="400"/>
+			<reward type="crecipe" recipeId="w3" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="1.891">
+			<requirement action="harvest" type="raspberry" many="1400"/>
+			<requirement action="seed" type="raspberry" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="w3" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.091">
+			<requirement action="harvest" type="raspberry" many="1400"/>
+			<requirement action="seed" type="raspberry" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="500"/>
+			<requirement action="seed" type="sugarcane" many="500"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="w3" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q22" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_spicyTomatoJuice_Title" description="bushelJob_spicyTomatoJuice_Description" story="bushelJob_spicyTomatoJuice_Story" complete="bushelJob_spicyTomatoJuice_Complete" fail="bushelJob_spicyTomatoJuice_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_spicytomatojuice.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="w4" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="w4" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="w4" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q23" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_drySake_Title" description="bushelJob_drySake_Description" story="bushelJob_drySake_Story" complete="bushelJob_drySake_Complete" fail="bushelJob_drySake_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_drysake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<requirement action="harvest" type="greentea" many="800"/>
+			<requirement action="seed" type="greentea" many="800"/>
+			<requirement action="harvest" type="lilac" many="800"/>
+			<requirement action="seed" type="lilac" many="800"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="w5" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<requirement action="harvest" type="greentea" many="800"/>
+			<requirement action="seed" type="greentea" many="800"/>
+			<requirement action="harvest" type="lilac" many="800"/>
+			<requirement action="seed" type="lilac" many="800"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="w5" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<requirement action="harvest" type="greentea" many="800"/>
+			<requirement action="seed" type="greentea" many="800"/>
+			<requirement action="harvest" type="lilac" many="800"/>
+			<requirement action="seed" type="lilac" many="800"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="w5" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q24" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_blackberryWine_Title" description="bushelJob_blackberryWine_Description" story="bushelJob_blackberryWine_Story" complete="bushelJob_blackberryWine_Complete" fail="bushelJob_blackberryWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_blackberrywine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="blackberries" many="600"/>
+			<requirement action="seed" type="blackberries" many="600"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="grapewhite" many="800"/>
+			<requirement action="seed" type="grapewhite" many="800"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="w6" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="blackberries" many="600"/>
+			<requirement action="seed" type="blackberries" many="600"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="grapewhite" many="800"/>
+			<requirement action="seed" type="grapewhite" many="800"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="w6" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="blackberries" many="600"/>
+			<requirement action="seed" type="blackberries" many="600"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="grapewhite" many="800"/>
+			<requirement action="seed" type="grapewhite" many="800"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="w6" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q25" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_strawberryCranberryJuice_Title" description="bushelJob_strawberryCranberryJuice_Description" story="bushelJob_strawberryCranberryJuice_Story" complete="bushelJob_strawberryCranberryJuice_Complete" fail="bushelJob_strawberryCranberryJuice_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_strawberrycraneberryjuice.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="4.333">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="350" experience="425"/>
+			<reward type="crecipe" recipeId="w7" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.375">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="425" experience="525"/>
+			<reward type="crecipe" recipeId="w7" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.375">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1400"/>
+			<requirement action="seed" type="cranberry" many="1400"/>
+			<reward type="generic" coins="525" experience="625"/>
+			<reward type="crecipe" recipeId="w7" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q26" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_raspberryWine_Title" description="bushelJob_raspberryWine_Description" story="bushelJob_raspberryWine_Story" complete="bushelJob_raspberryWine_Complete" fail="bushelJob_raspberryWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_raspberrywine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="w8" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="w8" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="raspberry" many="1000"/>
+			<requirement action="seed" type="raspberry" many="1000"/>
+			<requirement action="harvest" type="grapes" many="1250"/>
+			<requirement action="seed" type="grapes" many="1250"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="w8" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q27" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_blueberryWine_Title" description="bushelJob_blueberryWine_Description" story="bushelJob_blueberryWine_Story" complete="bushelJob_blueberryWine_Complete" fail="bushelJob_blueberryWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_blueberrywine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="blueberry" many="800"/>
+			<requirement action="seed" type="blueberry" many="800"/>
+			<requirement action="harvest" type="blackberries" many="800"/>
+			<requirement action="seed" type="blackberries" many="800"/>
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="w9" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="blueberry" many="800"/>
+			<requirement action="seed" type="blueberry" many="800"/>
+			<requirement action="harvest" type="blackberries" many="800"/>
+			<requirement action="seed" type="blackberries" many="800"/>
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="w9" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="blueberry" many="800"/>
+			<requirement action="seed" type="blueberry" many="800"/>
+			<requirement action="harvest" type="blackberries" many="800"/>
+			<requirement action="seed" type="blackberries" many="800"/>
+			<requirement action="harvest" type="grapewhite" many="1400"/>
+			<requirement action="seed" type="grapewhite" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="w9" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q28" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_herbalElixer_Title" description="bushelJob_herbalElixer_Description" story="bushelJob_herbalElixer_Story" complete="bushelJob_herbalElixer_Complete" fail="bushelJob_herbalElixer_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_herbalelixer.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="7.8666">
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c6" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="4.308">
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c6" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.508">
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c6" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q29" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_pumpkinVinegar_Title" description="bushelJob_pumpkinVinegar_Description" story="bushelJob_pumpkinVinegar_Story" complete="bushelJob_pumpkinVinegar_Complete" fail="bushelJob_pumpkinVinegar_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pumpkinvinegar.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="pumpkin" many="800"/>
+			<requirement action="seed" type="pumpkin" many="800"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c7" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="pumpkin" many="800"/>
+			<requirement action="seed" type="pumpkin" many="800"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c7" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="pumpkin" many="800"/>
+			<requirement action="seed" type="pumpkin" many="800"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c7" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q30" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_cucumberWine_Title" description="bushelJob_cucumberWine_Description" story="bushelJob_cucumberWine_Story" complete="bushelJob_cucumberWine_Complete" fail="bushelJob_cucumberWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_cucumberwine.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="cucumber" many="1200"/>
+			<requirement action="seed" type="cucumber" many="1200"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="c8" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="cucumber" many="1200"/>
+			<requirement action="seed" type="cucumber" many="1200"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="c8" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="cucumber" many="1200"/>
+			<requirement action="seed" type="cucumber" many="1200"/>
+			<requirement action="harvest" type="squashacorn" many="1000"/>
+			<requirement action="seed" type="squashacorn" many="1000"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="c8" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q31" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_rosePetalWater_Title" description="bushelJob_rosePetalWater_Description" story="bushelJob_rosePetalWater_Story" complete="bushelJob_rosePetalWater_Complete" fail="bushelJob_rosePetalWater_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_rosepetalwater.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="rosepink" many="1200"/>
+			<requirement action="seed" type="rosepink" many="1200"/>
+			<requirement action="harvest" type="lavender" many="800"/>
+			<requirement action="seed" type="lavender" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="c9" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="rosepink" many="1200"/>
+			<requirement action="seed" type="rosepink" many="1200"/>
+			<requirement action="harvest" type="lavender" many="800"/>
+			<requirement action="seed" type="lavender" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="c9" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="rosepink" many="1200"/>
+			<requirement action="seed" type="rosepink" many="1200"/>
+			<requirement action="harvest" type="lavender" many="800"/>
+			<requirement action="seed" type="lavender" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="c9" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q32" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingwinery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_melonJuice_Title" description="bushelJob_melonJuice_Description" story="bushelJob_melonJuice_Story" complete="bushelJob_melonJuice_Complete" fail="bushelJob_melonJuice_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_melonjuice.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_grapesquasher.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="carrot" many="1600"/>
+			<requirement action="seed" type="carrot" many="1600"/>
+			<requirement action="harvest" type="strawberry" many="1400"/>
+			<requirement action="seed" type="strawberry" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="d1" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="carrot" many="1600"/>
+			<requirement action="seed" type="carrot" many="1600"/>
+			<requirement action="harvest" type="strawberry" many="1400"/>
+			<requirement action="seed" type="strawberry" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="d1" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="carrot" many="1600"/>
+			<requirement action="seed" type="carrot" many="1600"/>
+			<requirement action="harvest" type="strawberry" many="1400"/>
+			<requirement action="seed" type="strawberry" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="d1" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+<!-- Spa Quests -->
+	
+	<quest id="Q33" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_freshSachet_Title" description="bushelJob_freshSachet_Description" story="bushelJob_freshSachet_Story" complete="bushelJob_freshSachet_Complete" fail="bushelJob_freshSachet_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_freshsachet.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="pumpkin" many="1000"/>
+			<requirement action="seed" type="pumpkin" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p0" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="pumpkin" many="1000"/>
+			<requirement action="seed" type="pumpkin" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p0" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="pumpkin" many="1000"/>
+			<requirement action="seed" type="pumpkin" many="1000"/>
+			<requirement action="harvest" type="cranberry" many="1000"/>
+			<requirement action="seed" type="cranberry" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p0" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q34" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_floralPerfume_Title" description="bushelJob_floralPerfume_Description" story="bushelJob_floralPerfume_Story" complete="bushelJob_floralPerfume_Complete" fail="bushelJob_floralPerfume_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_wishyouloveperfume.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="blueberry" many="1500"/>
+			<requirement action="seed" type="blueberry" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1250"/>
+			<requirement action="seed" type="bluemorningglory" many="1250"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="p1" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="blueberry" many="1500"/>
+			<requirement action="seed" type="blueberry" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1250"/>
+			<requirement action="seed" type="bluemorningglory" many="1250"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="p1" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="blueberry" many="1500"/>
+			<requirement action="seed" type="blueberry" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1250"/>
+			<requirement action="seed" type="bluemorningglory" many="1250"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="p1" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q35" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_soothingHerbalLotion_Title" description="bushelJob_soothingHerbalLotion_Description" story="bushelJob_soothingHerbalLotion_Story" complete="bushelJob_soothingHerbalLotion_Complete" fail="bushelJob_soothingHerbalLotion_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_herballotion.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="4.333">
+			<requirement action="harvest" type="aloe" many="1400"/>
+			<requirement action="seed" type="aloe" many="1400"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<reward type="generic" coins="325" experience="380"/>
+			<reward type="crecipe" recipeId="p2" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.375">
+			<requirement action="harvest" type="aloe" many="1400"/>
+			<requirement action="seed" type="aloe" many="1400"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<reward type="generic" coins="425" experience="475"/>
+			<reward type="crecipe" recipeId="p2" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.375">
+			<requirement action="harvest" type="aloe" many="1400"/>
+			<requirement action="seed" type="aloe" many="1400"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<reward type="generic" coins="600" experience="475"/>
+			<reward type="crecipe" recipeId="p2" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q36" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_relaxationOil_Title" description="bushelJob_relaxationOil_Description" story="bushelJob_relaxationOil_Story" complete="bushelJob_relaxationOil_Complete" fail="bushelJob_relaxationOil_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_armoatherapyrelax.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="blackberries" many="1500"/>
+			<requirement action="seed" type="blackberries" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1400"/>
+			<requirement action="seed" type="bluemorningglory" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="p3" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="blackberries" many="1500"/>
+			<requirement action="seed" type="blackberries" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1400"/>
+			<requirement action="seed" type="bluemorningglory" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="p3" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="blackberries" many="1500"/>
+			<requirement action="seed" type="blackberries" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1400"/>
+			<requirement action="seed" type="bluemorningglory" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="p3" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q37" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_devotionPerfume_Title" description="bushelJob_blueberryWine_Description" story="bushelJob_blueberryWine_Story" complete="bushelJob_blueberryWine_Complete" fail="bushelJob_blueberryWine_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_devotionperfume.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="4.333">
+			<requirement action="harvest" type="blueberry" many="600"/>
+			<requirement action="seed" type="blueberry" many="600"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="325" experience="380"/>
+			<reward type="crecipe" recipeId="p4" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.375">
+			<requirement action="harvest" type="blueberry" many="600"/>
+			<requirement action="seed" type="blueberry" many="600"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="425" experience="475"/>
+			<reward type="crecipe" recipeId="p4" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.375">
+			<requirement action="harvest" type="blueberry" many="600"/>
+			<requirement action="seed" type="blueberry" many="600"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="600" experience="475"/>
+			<reward type="crecipe" recipeId="p4" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q38" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_petalSachet_Title" description="bushelJob_petalSachet_Description" story="bushelJob_petalSachet_Story" complete="bushelJob_petalSachet_Complete" fail="bushelJob_petalSachet_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_petalsachet.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="iris" many="800"/>
+			<requirement action="seed" type="iris" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<requirement action="harvest" type="peppers" many="800"/>
+			<requirement action="seed" type="peppers" many="800"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p5" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="iris" many="800"/>
+			<requirement action="seed" type="iris" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<requirement action="harvest" type="peppers" many="800"/>
+			<requirement action="seed" type="peppers" many="800"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p5" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="iris" many="800"/>
+			<requirement action="seed" type="iris" many="800"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<requirement action="harvest" type="peppers" many="800"/>
+			<requirement action="seed" type="peppers" many="800"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p5" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q39" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_energizingLotion_Title" description="bushelJob_energizingLotion_Description" story="bushelJob_energizingLotion_Story" complete="bushelJob_energizingLotion_Complete" fail="bushelJob_energizingLotion_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_energizinglotion.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="tulipred" many="1400"/>
+			<requirement action="seed" type="tulipred" many="1400"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p6" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="tulipred" many="1400"/>
+			<requirement action="seed" type="tulipred" many="1400"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p6" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="tulipred" many="1400"/>
+			<requirement action="seed" type="tulipred" many="1400"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p6" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q40" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_restoringCandle_Title" description="bushelJob_restoringCandle_Description" story="bushelJob_restoringCandle_Story" complete="bushelJob_restoringCandle_Complete" fail="bushelJob_restoringCandle_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_restoringcandle.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p7" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p7" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="greentea" many="1000"/>
+			<requirement action="seed" type="greentea" many="1000"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<requirement action="harvest" type="sunflowers" many="1400"/>
+			<requirement action="seed" type="sunflowers" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p7" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q41" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_lilyOfTheValleySoap_Title" description="bushelJob_lilyOfTheValleySoap_Description" story="bushelJob_lilyOfTheValleySoap_Story" complete="bushelJob_lilyOfTheValleySoap_Complete" fail="bushelJob_lilyOfTheValleySoap_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_lilyofthevalleysoap.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="bluemorningglory" many="1000"/>
+			<requirement action="seed" type="bluemorningglory" many="1000"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p8" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="bluemorningglory" many="1000"/>
+			<requirement action="seed" type="bluemorningglory" many="1000"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p8" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="bluemorningglory" many="1000"/>
+			<requirement action="seed" type="bluemorningglory" many="1000"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p8" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q42" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_irisSoap_Title" description="bushelJob_irisSoap_Description" story="bushelJob_irisSoap_Story" complete="bushelJob_irisSoap_Complete" fail="bushelJob_irisSoap_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_irissoap.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="iris" many="1000"/>
+			<requirement action="seed" type="iris" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1200"/>
+			<requirement action="seed" type="aloe" many="1200"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="p9" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="iris" many="1000"/>
+			<requirement action="seed" type="iris" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1200"/>
+			<requirement action="seed" type="aloe" many="1200"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="p9" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="iris" many="1000"/>
+			<requirement action="seed" type="iris" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1200"/>
+			<requirement action="seed" type="aloe" many="1200"/>
+			<requirement action="harvest" type="sunflowers" many="800"/>
+			<requirement action="seed" type="sunflowers" many="800"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="p9" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q43" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_freshBreezeCandle_Title" description="bushelJob_freshBreezeCandle_Description" story="bushelJob_freshBreezeCandle_Story" complete="bushelJob_freshBreezeCandle_Complete" fail="bushelJob_freshBreezeCandle_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_meditationcandle.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="7.866">
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<reward type="generic" coins="625" experience="725"/>
+			<reward type="crecipe" recipeId="d2" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="4.308">
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<reward type="generic" coins="750" experience="875"/>
+			<reward type="crecipe" recipeId="d2" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.508">
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="greentea" many="1250"/>
+			<requirement action="seed" type="greentea" many="1250"/>
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<reward type="generic" coins="825" experience="975"/>
+			<reward type="crecipe" recipeId="d2" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q44" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_pickMeUpSachet_Title" description="bushelJob_pickMeUpSachet_Description" story="bushelJob_pickMeUpSachet_Story" complete="bushelJob_pickMeUpSachet_Complete" fail="bushelJob_pickMeUpSachet_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pickmeupsachet.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="7.866">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="d32" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="4.308">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="725" experience="850"/>
+			<reward type="crecipe" recipeId="d3" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.508">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="lemonbalm" many="1000"/>
+			<requirement action="seed" type="lemonbalm" many="1000"/>
+			<requirement action="harvest" type="basil" many="1000"/>
+			<requirement action="seed" type="basil" many="1000"/>
+			<reward type="generic" coins="800" experience="950"/>
+			<reward type="crecipe" recipeId="d3" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q45" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_farmersFrenzyPerfume_Title" description="bushelJob_farmersFrenzyPerfume_Description" story="bushelJob_farmersFrenzyPerfume_Story" complete="bushelJob_farmersFrenzyPerfume_Complete" fail="bushelJob_farmersFrenzyPerfume_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_famersfrenzyperfume.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="7.866">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="poppypurple" many="1000"/>
+			<requirement action="seed" type="poppypurple" many="1000"/>
+			<reward type="generic" coins="625" experience="725"/>
+			<reward type="crecipe" recipeId="d4" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="4.308">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="poppypurple" many="1000"/>
+			<requirement action="seed" type="poppypurple" many="1000"/>
+			<reward type="generic" coins="750" experience="875"/>
+			<reward type="crecipe" recipeId="d4" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.508">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="lilac" many="1000"/>
+			<requirement action="seed" type="lilac" many="1000"/>
+			<requirement action="harvest" type="poppypurple" many="1000"/>
+			<requirement action="seed" type="poppypurple" many="1000"/>
+			<reward type="generic" coins="825" experience="975"/>
+			<reward type="crecipe" recipeId="d4" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q46" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_daffodilLotion_Title" description="bushelJob_daffodilLotion_Description" story="bushelJob_daffodilLotion_Story" complete="bushelJob_daffodilLotion_Complete" fail="bushelJob_daffodilLotion_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_daffodillotion.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="d5" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="d5" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="strawberry" many="1000"/>
+			<requirement action="seed" type="strawberry" many="1000"/>
+			<requirement action="harvest" type="aloe" many="1000"/>
+			<requirement action="seed" type="aloe" many="1000"/>
+			<requirement action="harvest" type="lily" many="1400"/>
+			<requirement action="seed" type="lily" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="d5" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q47" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingspa" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_transcendentCandle_Title" description="bushelJob_transcendentCandle_Description" story="bushelJob_transcendentCandle_Story" complete="bushelJob_transcendentCandle_Complete" fail="bushelJob_transcendentCandle_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_transcendentcandle.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_spahostess.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="lilac" many="1500"/>
+			<requirement action="seed" type="lilac" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1500"/>
+			<requirement action="seed" type="bluemorningglory" many="1500"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="d6" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="lilac" many="1500"/>
+			<requirement action="seed" type="lilac" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1500"/>
+			<requirement action="seed" type="bluemorningglory" many="1500"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="d6" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="lilac" many="1500"/>
+			<requirement action="seed" type="lilac" many="1500"/>
+			<requirement action="harvest" type="bluemorningglory" many="1500"/>
+			<requirement action="seed" type="bluemorningglory" many="1500"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="d6" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+<!-- Bakery Quests -->
+
+	<quest id="Q48" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_pumpkinBread_Title" description="bushelJob_pumpkinBread_Description" story="bushelJob_pumpkinBread_Story" complete="bushelJob_pumpkinBread_Complete" fail="bushelJob_pumpkinBread_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pumpkinbread.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="b0" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="b0" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="pumpkin" many="1400"/>
+			<requirement action="seed" type="pumpkin" many="1400"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b0" quantity="3"/>
+		</completionRequirements>
+	</quest>	
+
+	<quest id="Q49" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_strawberryShortcake_Title" description="bushelJob_strawberryShortcake_Description" story="bushelJob_strawberryShortcake_Story" complete="bushelJob_strawberryShortcake_Complete" fail="bushelJob_strawberryShortcake_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_shortcake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="strawberry" many="1500"/>
+			<requirement action="seed" type="strawberry" many="1500"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="b1" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="strawberry" many="1500"/>
+			<requirement action="seed" type="strawberry" many="1500"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="b1" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="strawberry" many="1500"/>
+			<requirement action="seed" type="strawberry" many="1500"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b1" quantity="3"/>
+		</completionRequirements>
+	</quest>	
+
+	<quest id="Q50" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_spicyMuffin_Title" description="bushelJob_spicyMuffin_Description" story="bushelJob_spicyMuffin_Story" complete="bushelJob_spicyMuffin_Complete" fail="bushelJob_spicyMuffin_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_spicycornmuffin.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="b2" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="b2" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<requirement action="harvest" type="ghostchili" many="1000"/>
+			<requirement action="seed" type="ghostchili" many="1000"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="b2" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q51" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_pattypanTart_Title" description="bushelJob_pattypanTart_Description" story="bushelJob_pattypanTart_Story" complete="bushelJob_pattypanTart_Complete" fail="bushelJob_pattypanTart_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pattypantart.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="6.983">
+			<requirement action="harvest" type="squashpetitpan" many="1400"/>
+			<requirement action="seed" type="squashpetitpan" many="1400"/>
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b3" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3.825">
+			<requirement action="harvest" type="squashpetitpan" many="1400"/>
+			<requirement action="seed" type="squashpetitpan" many="1400"/>
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="725" experience="850"/>
+			<reward type="crecipe" recipeId="b3" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.225">
+			<requirement action="harvest" type="squashpetitpan" many="1400"/>
+			<requirement action="seed" type="squashpetitpan" many="1400"/>
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="800" experience="950"/>
+			<reward type="crecipe" recipeId="b3" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q52" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_tripleBerryPie_Title" description="bushelJob_tripleBerryPie_Description" story="bushelJob_tripleBerryPie_Story" complete="bushelJob_tripleBerryPie_Complete" fail="bushelJob_tripleBerryPie_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_tripleberrypie.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="b4" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="b4" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="blackberries" many="1000"/>
+			<requirement action="seed" type="blackberries" many="1000"/>
+			<requirement action="harvest" type="blueberry" many="1000"/>
+			<requirement action="seed" type="blueberry" many="1000"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b4" quantity="3"/>
+		</completionRequirements>
+	</quest>	
+
+	<quest id="Q53" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_peanutButterCookies_Title" description="bushelJob_peanutButterCookies_Description" story="bushelJob_peanutButterCookies_Story" complete="bushelJob_peanutButterCookies_Complete" fail="bushelJob_peanutButterCookies_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_peanutbuttercookies.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="6.983">
+			<requirement action="harvest" type="peanuts" many="1400"/>
+			<requirement action="seed" type="peanuts" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="1000"/>
+			<requirement action="seed" type="sugarcane" many="1000"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b5" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3.825">
+			<requirement action="harvest" type="peanuts" many="1400"/>
+			<requirement action="seed" type="peanuts" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="1000"/>
+			<requirement action="seed" type="sugarcane" many="1000"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="725" experience="850"/>
+			<reward type="crecipe" recipeId="b5" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.225">
+			<requirement action="harvest" type="peanuts" many="1400"/>
+			<requirement action="seed" type="peanuts" many="1400"/>
+			<requirement action="harvest" type="sugarcane" many="1000"/>
+			<requirement action="seed" type="sugarcane" many="1000"/>
+			<requirement action="harvest" type="rice" many="800"/>
+			<requirement action="seed" type="rice" many="800"/>
+			<reward type="generic" coins="800" experience="950"/>
+			<reward type="crecipe" recipeId="b5" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q54" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_raspberryBlondie_Title" description="bushelJob_raspberryBlondie_Description" story="bushelJob_raspberryBlondie_Story" complete="bushelJob_raspberryBlondie_Complete" fail="bushelJob_raspberryBlondie_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_raspberryblondie.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<requirement action="harvest" type="raspberry" many="800"/>
+			<requirement action="seed" type="raspberry" many="800"/>
+			<requirement action="harvest" type="wheat" many="1200"/>
+			<requirement action="seed" type="wheat" many="1200"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="b6" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<requirement action="harvest" type="raspberry" many="800"/>
+			<requirement action="seed" type="raspberry" many="800"/>
+			<requirement action="harvest" type="wheat" many="1200"/>
+			<requirement action="seed" type="wheat" many="1200"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="b6" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<requirement action="harvest" type="raspberry" many="800"/>
+			<requirement action="seed" type="raspberry" many="800"/>
+			<requirement action="harvest" type="wheat" many="1200"/>
+			<requirement action="seed" type="wheat" many="1200"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b6" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q55" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_vegetableTart_Title" description="bushelJob_vegetableTart_Description" story="bushelJob_vegetableTart_Story" complete="bushelJob_vegetableTart_Complete" fail="bushelJob_vegetableTart_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_vegetabletart.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="asparagus" many="1400"/>
+			<requirement action="seed" type="asparagus" many="1400"/>
+			<requirement action="harvest" type="peas" many="1400"/>
+			<requirement action="seed" type="peas" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="b7" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="asparagus" many="1400"/>
+			<requirement action="seed" type="asparagus" many="1400"/>
+			<requirement action="harvest" type="peas" many="1400"/>
+			<requirement action="seed" type="peas" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="b7" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="asparagus" many="1400"/>
+			<requirement action="seed" type="asparagus" many="1400"/>
+			<requirement action="harvest" type="peas" many="1400"/>
+			<requirement action="seed" type="peas" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="b7" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q56" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_mochaBlackberryCake_Title" description="bushelJob_mochaBlackberryCake_Description" story="bushelJob_mochaBlackberryCake_Story" complete="bushelJob_mochaBlackberryCake_Complete" fail="bushelJob_mochaBlackberryCake_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_mochablackberrycake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="6.983">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="blackberries" many="1400"/>
+			<requirement action="seed" type="blackberries" many="1400"/>
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="b8" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3.825">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="blackberries" many="1400"/>
+			<requirement action="seed" type="blackberries" many="1400"/>
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" coins="725" experience="850"/>
+			<reward type="crecipe" recipeId="b8" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.225">
+			<requirement action="harvest" type="coffee" many="1400"/>
+			<requirement action="seed" type="coffee" many="1400"/>
+			<requirement action="harvest" type="blackberries" many="1400"/>
+			<requirement action="seed" type="blackberries" many="1400"/>
+			<requirement action="harvest" type="rice" many="1200"/>
+			<requirement action="seed" type="rice" many="1200"/>
+			<reward type="generic" coins="800" experience="950"/>
+			<reward type="crecipe" recipeId="b8" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q57" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_oatmealCookies_Title" description="bushelJob_oatmealCookies_Description" story="bushelJob_oatmealCookies_Story" complete="bushelJob_oatmealCookies_Complete" fail="bushelJob_oatmealCookies_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_oatmealcookies.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="oats" many="1200"/>
+			<requirement action="seed" type="oats" many="1200"/>
+			<requirement action="harvest" type="sugarcane" many="800"/>
+			<requirement action="seed" type="sugarcane" many="800"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c0" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="oats" many="1200"/>
+			<requirement action="seed" type="oats" many="1200"/>
+			<requirement action="harvest" type="sugarcane" many="800"/>
+			<requirement action="seed" type="sugarcane" many="800"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c0" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="oats" many="1200"/>
+			<requirement action="seed" type="oats" many="1200"/>
+			<requirement action="harvest" type="sugarcane" many="800"/>
+			<requirement action="seed" type="sugarcane" many="800"/>
+			<requirement action="harvest" type="wheat" many="1400"/>
+			<requirement action="seed" type="wheat" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c0" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q58" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_bakedCucumber_Title" description="bushelJob_bakedCucumber_Description" story="bushelJob_bakedCucumber_Story" complete="bushelJob_bakedCucumber_Complete" fail="bushelJob_bakedCucumber_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_bakedcucumber.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="basil" many="1200"/>
+			<requirement action="seed" type="basil" many="1200"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="c1" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="basil" many="1200"/>
+			<requirement action="seed" type="basil" many="1200"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="c1" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="basil" many="1200"/>
+			<requirement action="seed" type="basil" many="1200"/>
+			<requirement action="harvest" type="peppers" many="1400"/>
+			<requirement action="seed" type="peppers" many="1400"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="c1" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+	<quest id="Q59" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_pizzaBread_Title" description="bushelJob_pizzaBread_Description" story="bushelJob_pizzaBread_Story" complete="bushelJob_pizzaBread_Complete" fail="bushelJob_pizzaBread_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_pizzabread.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="basil" many="800"/>
+			<requirement action="seed" type="basil" many="800"/>
+			<requirement action="harvest" type="wheat" many="1250"/>
+			<requirement action="seed" type="wheat" many="1250"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c2" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="basil" many="800"/>
+			<requirement action="seed" type="basil" many="800"/>
+			<requirement action="harvest" type="wheat" many="1250"/>
+			<requirement action="seed" type="wheat" many="1250"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c2" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="tomato" many="800"/>
+			<requirement action="seed" type="tomato" many="800"/>
+			<requirement action="harvest" type="basil" many="800"/>
+			<requirement action="seed" type="basil" many="800"/>
+			<requirement action="harvest" type="wheat" many="1250"/>
+			<requirement action="seed" type="wheat" many="1250"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c2" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q60" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_gingerSnaps_Title" description="bushelJob_gingerSnaps_Description" story="bushelJob_gingerSnaps_Story" complete="bushelJob_gingerSnaps_Complete" fail="bushelJob_gingerSnaps_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_gingersnaps.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="7.866">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<requirement action="harvest" type="oats" many="1400"/>
+			<requirement action="seed" type="oats" many="1400"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c3" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="4.308">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<requirement action="harvest" type="oats" many="1400"/>
+			<requirement action="seed" type="oats" many="1400"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c3" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2.508">
+			<requirement action="harvest" type="ginger" many="1250"/>
+			<requirement action="seed" type="ginger" many="1250"/>
+			<requirement action="harvest" type="rice" many="1000"/>
+			<requirement action="seed" type="rice" many="1000"/>
+			<requirement action="harvest" type="oats" many="1400"/>
+			<requirement action="seed" type="oats" many="1400"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c3" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q61" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_potatoOnionBread_Title" description="bushelJob_potatoOnionBread_Description" story="bushelJob_potatoOnionBread_Story" complete="bushelJob_potatoOnionBread_Complete" fail="bushelJob_potatoOnionBread_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_potatoonionbread.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="bluecorn" many="800"/>
+			<requirement action="seed" type="bluecorn" many="800"/>
+			<requirement action="harvest" type="wheat" many="800"/>
+			<requirement action="seed" type="wheat" many="800"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="c4" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="bluecorn" many="800"/>
+			<requirement action="seed" type="bluecorn" many="800"/>
+			<requirement action="harvest" type="wheat" many="800"/>
+			<requirement action="seed" type="wheat" many="800"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="c4" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="onion" many="800"/>
+			<requirement action="seed" type="onion" many="800"/>
+			<requirement action="harvest" type="bluecorn" many="800"/>
+			<requirement action="seed" type="bluecorn" many="800"/>
+			<requirement action="harvest" type="wheat" many="800"/>
+			<requirement action="seed" type="wheat" many="800"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="c4" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+	<quest id="Q62" type="crafting"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingbakery" jobUtilHandler="SMCraftingMissionHandler">
+		<text title="bushelJob_carrotCake_Title" description="bushelJob_carrotCake_Description" story="bushelJob_carrotCake_Story" complete="bushelJob_carrotCake_Complete" fail="bushelJob_carrotCake_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_carrotcake.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_portlychef.png"/>
+		<completionRequirements name="bronze" timeLimit="10.517">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="soybeans" many="1250"/>
+			<requirement action="seed" type="soybeans" many="1250"/>
+			<requirement action="harvest" type="cranberry" many="800"/>
+			<requirement action="seed" type="cranberry" many="800"/>
+			<reward type="generic" coins="640" experience="775"/>
+			<reward type="crecipe" recipeId="c51" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="5.758">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="soybeans" many="1250"/>
+			<requirement action="seed" type="soybeans" many="1250"/>
+			<requirement action="harvest" type="cranberry" many="800"/>
+			<requirement action="seed" type="cranberry" many="800"/>
+			<reward type="generic" coins="775" experience="950"/>
+			<reward type="crecipe" recipeId="c5" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="3.358">
+			<requirement action="harvest" type="carrot" many="1000"/>
+			<requirement action="seed" type="carrot" many="1000"/>
+			<requirement action="harvest" type="soybeans" many="1250"/>
+			<requirement action="seed" type="soybeans" many="1250"/>
+			<requirement action="harvest" type="cranberry" many="800"/>
+			<requirement action="seed" type="cranberry" many="800"/>
+			<reward type="generic" coins="875" experience="1050"/>
+			<reward type="crecipe" recipeId="c5" quantity="3"/>
+		</completionRequirements>
+	</quest>
+	
+<!-- Haiti Quest -->
+	
+	<quest id="Q17" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" limitedEditionStart="9/16/2010" limitedEditionEnd="10/3/2010" isNew="false">
+    	<text title="SweetbeetsforHaiti_Title" description="SweetbeetsforHaiti_blowout_Description" story="SweetbeetsforHaiti_blowout_Story" complete="SweetbeetsforHaiti_blowout_Complete" fail="SweetbeetsforHaiti_blowout_Fail" /> 
+        <icon url="assets/newsfeed/socialmissions_haitibeets.png" /> 
+        <questGiverImage url="assets/SocialMissions/SM_avatar_beetchef.png" /> 
+        <completionRequirements name="bronze" timeLimit="2.42">
+        	<requirement action="harvest" type="beets" many="1000" /> 
+            <requirement action="seed" type="beets" many="1000" /> 
+            <reward coins="280" experience="320" /> 
+        </completionRequirements>
+        <completionRequirements name="silver" timeLimit="1.46">
+            <requirement action="harvest" type="beets" many="1000" /> 
+            <requirement action="seed" type="beets" many="1000" /> 
+            <reward coins="340" experience="380" /> 
+        </completionRequirements>
+            <completionRequirements name="gold" timeLimit=".96">
+            <requirement action="harvest" type="beets" many="1000" /> 
+            <requirement action="seed" type="beets" many="1000" /> 
+            <reward type="generic" item="seedersweetseeds" coins="390" experience="440" /> 
+        </completionRequirements>
+    </quest>
+    
+    <quest id="Q63" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" limitedEditionStart="12/1/2010" limitedEditionEnd="12/15/2010" isNew="false" jobUtilHandler="SMLicenseMissionHandler">
+    	<text title="Campaign_Donate_candycane_Title" description="Campaign_Donate_candycane_Description" story="Campaign_Donate_candycane_Story" complete="Campaign_Donate_candycane_Complete" fail="Campaign_Donate_candycane_Fail" /> 
+        <icon url="assets/newsfeed/socialmissions_candycanes.png" /> 
+        <questGiverImage url="assets/SocialMissions/SM_avatar_winterholiday.png" /> 
+        <completionRequirements name="bronze" timeLimit="3">
+        	<requirement action="harvest" type="candycane" many="1000" /> 
+            <requirement action="seed" type="candycane" many="1000" /> 
+            <reward type="generic" coins="500" experience="500" /> 
+        </completionRequirements>
+        <completionRequirements name="silver" timeLimit="2">
+            <requirement action="harvest" type="candycane" many="1000" /> 
+            <requirement action="seed" type="candycane" many="1000" /> 
+            <reward type="generic" coins="600" experience="650" /> 
+        </completionRequirements>
+            <completionRequirements name="gold" timeLimit="1">
+            <requirement action="harvest" type="candycane" many="1000" /> 
+            <requirement action="seed" type="candycane" many="1000" /> 
+            <reward type="generic" item="sheep_candycane" coins="700" experience="800" /> 
+        </completionRequirements>
+    </quest>
+	
+<!-- Pub Quests -->
+
+	<quest id="Q67" type="crafting" world="england" requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false" requiredHostItemName="craftingpub" jobUtilHandler="xukcraftingpub">
+		<text title="bushelJob_oliviaberryBeer_Title" description="bushelJob_oliviaberryBeer_Description" story="bushelJob_oliviaberryBeer_Story" complete="bushelJob_oliviaberryBeer_Complete" fail="bushelJob_oliviaberryBeer_Fail"/>
+		<icon url="assets/newsfeed/socialmissions_oliviaberrybeer.png"/>
+		<questGiverImage url="assets/dialogs/4d_elements/Questing/NPC_standing_olivia_happy.png"/>
+		<completionRequirements name="bronze" timeLimit="5.216">
+			<requirement action="harvest" type="redcurrant" many="1400"/>
+			<requirement action="seed" type="redcurrant" many="1400"/>
+			<requirement action="harvest" type="hops" many="1600"/>
+			<requirement action="seed" type="hops" many="1600"/>
+			<reward type="generic" coins="400" experience="500"/>
+			<reward type="crecipe" recipeId="ln" quantity="1"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="2.858">
+			<requirement action="harvest" type="redcurrant" many="1400"/>
+			<requirement action="seed" type="redcurrant" many="1400"/>
+			<requirement action="harvest" type="hops" many="1600"/>
+			<requirement action="seed" type="hops" many="1600"/>
+			<reward type="generic" coins="500" experience="600"/>
+			<reward type="crecipe" recipeId="ln" quantity="2"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="1.658">
+			<requirement action="harvest" type="redcurrant" many="1400"/>
+			<requirement action="seed" type="redcurrant" many="1400"/>
+			<requirement action="harvest" type="hops" many="1600"/>
+			<requirement action="seed" type="hops" many="1600"/>
+			<reward type="generic" coins="600" experience="700"/>
+			<reward type="crecipe" recipeId="ln" quantity="3"/>
+		</completionRequirements>
+	</quest>
+
+    <quest id="Q68" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="true">
+        <text title="craftsFair_Title" description="craftsFair_Description" story="craftsFair_Story" complete="craftsFair_Complete" fail="craftsFair_Fail"/>
+        <icon url="assets/newsfeed/socialmissions_lavender.png"/>
+        <questGiverImage url="assets/SocialMissions/SM_avatar_MrT.png"/>
+        <completionRequirements name="bronze" timeLimit="4">
+            <requirement action="harvest" type="lavender" many="500"/>
+            <requirement action="seed" type="lavender" many="500"/>
+            <reward type="generic" coins="330" experience="380" item="consume_fuelWhole" count="2"/>
+        </completionRequirements>
+        <completionRequirements name="silver" timeLimit="3.5">
+            <requirement action="harvest" type="lavender" many="500"/>
+            <requirement action="seed" type="lavender" many="500"/>
+            <reward type="generic" coins="400" experience="455" item="consume_fuelWhole" count="3"/>
+        </completionRequirements>
+        <completionRequirements name="gold" timeLimit="3">
+            <requirement action="harvest" type="lavender" many="500"/>
+            <requirement action="seed" type="lavender" many="500"/>
+            <reward type="generic" coins="455" experience="535" item="consume_fuelWhole" count="4"/>
+        </completionRequirements>
+    </quest>
+
+    <quest id="Q69" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="true">
+        <text title="candleMaking_Title" description="candleMaking_Description" story="candleMaking_Story" complete="candleMaking_Complete" fail="candleMaking_Fail"/>
+        <icon url="assets/newsfeed/socialmissions_teacoffebasil.png"/>
+        <questGiverImage url="assets/SocialMissions/SM_avatar_MrT.png"/>
+        <completionRequirements name="bronze" timeLimit="3.25">
+            <requirement action="harvest" type="coffee" many="500"/>
+            <requirement action="seed" type="coffee" many="500"/>
+            <requirement action="harvest" type="greentea" many="500"/>
+            <requirement action="seed" type="greentea" many="500"/>
+            <requirement action="harvest" type="basil" many="500"/>
+            <requirement action="seed" type="basil" many="500"/>
+            <reward type="generic" coins="640" experience="740" item="consume_fuelWhole" count="2"/>
+        </completionRequirements>
+        <completionRequirements name="silver" timeLimit="2">
+            <requirement action="harvest" type="coffee" many="500"/>
+            <requirement action="seed" type="coffee" many="500"/>
+            <requirement action="harvest" type="greentea" many="500"/>
+            <requirement action="seed" type="greentea" many="500"/>
+            <requirement action="harvest" type="basil" many="500"/>
+            <requirement action="seed" type="basil" many="500"/>
+            <reward type="generic" coins="780" experience="890" item="consume_fuelWhole" count="3"/>
+        </completionRequirements>
+        <completionRequirements name="gold" timeLimit="1.2917">
+            <requirement action="harvest" type="coffee" many="500"/>
+            <requirement action="seed" type="coffee" many="500"/>
+            <requirement action="harvest" type="greentea" many="500"/>
+            <requirement action="seed" type="greentea" many="500"/>
+            <requirement action="harvest" type="basil" many="500"/>
+            <requirement action="seed" type="basil" many="500"/>
+            <reward type="generic" coins="890" experience="990" item="consume_fuelWhole" count="4"/>
+        </completionRequirements>
+    </quest>
+
+    <quest id="Q70" type="basic"  requiredLevel="20" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="true">
+        <text title="ballGame_Title" description="ballGame_Description" story="ballGame_Story" complete="ballGame_Complete" fail="ballGame_Fail"/>
+        <icon url="assets/newsfeed/socialmissions_peanuts.png"/>
+        <questGiverImage url="assets/SocialMissions/SM_avatar_MrT.png"/>
+        <completionRequirements name="bronze" timeLimit="3.25">
+            <requirement action="harvest" type="peanuts" many="1350"/>
+            <requirement action="seed" type="peanuts" many="1350"/>
+            <reward type="generic" coins="640" experience="740" item="consume_fuelWhole" count="2"/>
+        </completionRequirements>
+        <completionRequirements name="silver" timeLimit="2">
+            <requirement action="harvest" type="peanuts" many="1350"/>
+            <requirement action="seed" type="peanuts" many="1350"/>
+            <reward type="generic" coins="780" experience="890" item="consume_fuelWhole" count="3"/>
+        </completionRequirements>
+        <completionRequirements name="gold" timeLimit="1.2917">
+            <requirement action="harvest" type="peanuts" many="1350"/>
+            <requirement action="seed" type="peanuts" many="1350"/>
+            <reward type="generic" coins="890" experience="990" item="consume_fuelWhole" count="4"/>
+        </completionRequirements>
+    </quest>
+	
+	<!--
+	<quest id="Q14" requiredLevel="35" requiredJoinLevel="20" repeatable="true" maxUsers="10" deprecated="false" isNew="false">
+		<text title="spring_bulbs_Title" description="spring_bulbs_Description" story="spring_bulbs_Story" complete="spring_bulbs_Complete" fail="spring_bulbs_Fail" />
+		<icon url="assets/newsfeed/socialmissions_teaparty.png"/>
+		<questGiverImage url="assets/SocialMissions/SM_avatar_sweaty.png"/>	
+		<completionRequirements name="bronze" timeLimit="4.916">
+			<requirement action="harvest" type="lily" many="500"/>
+			<requirement action="seed" type="lily" many="500"/>
+			<requirement action="harvest" type="tulipred" many="750"/>
+			<requirement action="seed" type="tulipred" many="750"/>
+			<reward coins="590" experience="680"/>
+		</completionRequirements>
+		<completionRequirements name="silver" timeLimit="3">
+			<requirement action="harvest" type="lily" many="500"/>
+			<requirement action="seed" type="lily" many="500"/>
+			<requirement action="harvest" type="tulipred" many="750"/>
+			<requirement action="seed" type="tulipred" many="750"/>			
+			<reward coins="700" experience="820"/>
+		</completionRequirements>
+		<completionRequirements name="gold" timeLimit="2">
+			<requirement action="harvest" type="lily" many="500"/>
+			<requirement action="seed" type="lily" many="500"/>
+			<requirement action="harvest" type="tulipred" many="750"/>
+			<requirement action="seed" type="tulipred" many="750"/>			
+			<reward item="sheep_grapes" coins="800" experience="935"/>
+		</completionRequirements>
+	</quest>
+-->	
+</quests>

@@ -1,0 +1,1070 @@
+
+
+<dialogs>
+	<ExtendableData sType="styles">
+	
+		<!-- everything extends from this base object, so it holds all the key/value defaults -->
+		<node sName="base">
+			<var sKey="sDrawClassName"			sValue="ElementBase" />
+			
+			<var sKey="sName"					sValue=""			/>
+			<var sKey="uColor"					sValue="#EADDCD"	/>
+			<var sKey="nCornerRadius"			sValue="15"			/>
+			<var sKey="bDrawShadow"				sValue="true"		/>
+			<var sKey="sFont"					sValue="Merkin"		/>
+			<var sKey="nScale"					sValue="1.0"		/>
+			<var sKey="uShadowColor"			sValue="#23172D"	/>
+			<var sKey="ptShadowOffset"			sValue="3.5,3.5"	/>
+			<var sKey="uShadowStrokeColor"		sValue="#23172D"	/>
+			<var sKey="uStrokeColor"			sValue="#70543A"	/>
+			<var sKey="nStrokeThickness"		sValue="4"			/>
+			<var sKey="uTextColor"				sValue="#54978F"	/>
+			<var sKey="ptTextNudge"				sValue="0,3"		/>
+			<var sKey="nTextSize"				sValue="14"			/>
+			<var sKey="rtMargin"				sValue="top:0,left:0,right:0,bottom:0"	/>
+			<var sKey="rtPadding"				sValue="top:0,left:0,right:0,bottom:0"	/>
+			<var sKey="nPixels"					sValue="0"			/>
+			<var sKey="bVisible"				sValue="true"		/>
+		
+			<node sName="dialog">
+			<var sKey="sDrawClassName"			sValue="ElementBase" />
+				
+				<!-- Dialog Window -->	
+				<node sName="bg">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Frames.DialogBGBase" />
+						
+					<node sName="farm">
+						<var sKey="sDrawClassName"		sValue="Widgets.View.Frames.DialogBGFarm" />
+						<var sKey="rtPadding"			sValue="top:16,left:0,right:0,bottom:15"	/>
+					</node>
+				</node>
+				
+				<!-- Content Box -->	
+				<node sName="content_box">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Frames.DialogContentBoxBase" />
+
+					<var sKey="nStrokeThickness"	sValue="3"		/>
+					<var sKey="bDrawShadow"			sValue="false"	/>
+					<var sKey="nCornerRadius"		sValue="8"		/>
+					<var sKey="rtMargin"			sValue="top:16,left:60,right:60,bottom:0"	/>
+					<var sKey="rtPadding"			sValue="top:5,left:5,right:5,bottom:0"	/>
+					
+					<node sName="farm">
+						<var sKey="uColor"			sValue="#fffDE6"	/>
+						<var sKey="uStrokeColor"	sValue="#8E6F4A"	/>
+					</node>
+					
+					<node sName="uni_farm">
+						<var sKey="rtPadding"		sValue="top:5,left:20,right:20,bottom:0"	/>
+						<var sKey="uColor"			sValue="#FFFFFF"	/>
+						<var sKey="uStrokeColor"	sValue="#28438B"	/>
+					</node>
+				</node>
+
+				<!-- Image -->
+				<node sName="image">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Icons.IconImageBase" />
+				
+					<node sName="farm">
+					</node>
+				</node>
+					
+				<!-- swf -->
+				<node sName="swf">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Icons.IconSwfAssetBase" />
+				
+					<node sName="farm">
+					</node>
+				</node>
+					
+				<!-- Text -->	
+				<node sName="text">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.TextFields.TextFieldBase" />
+					
+					<node sName="farm">
+							
+						<node sName="h1">
+							<var sKey="nTextSize"		sValue="22"		/>
+						</node>
+						
+						<node sName="h2">
+							<var sKey="nTextSize"		sValue="18"		/>
+						</node>
+						
+						<node sName="body">
+						</node>
+						
+						<node sName="small">
+							<var sKey="nTextSize"		sValue="10"		/>
+						</node>
+					</node>
+					
+					<node sName="uni_farm">
+						<var sKey="uTextColor"		sValue="#6266A2"	/>
+					</node>
+				</node>
+				
+				<!-- Title Bar -->	
+				<node sName="titlebar">
+					<var sKey="sDrawClassName"	sValue="Widgets.View.TextFields.DialogTitleBarBase" />
+					<var sKey="rtPadding"		sValue="top:0,left:15,right:15,bottom:0"	/>
+					<var sKey="uColor"			sValue="#FDF7C3"	/>
+					<var sKey="uStrokeColor"	sValue="#FDF7C3"	/>
+					<var sKey="uTextColor"		sValue="#58422B"	/>
+					<var sKey="nTextSize"		sValue="32"			/>
+					<var sKey="y"				sValue="0"			/>
+					<var sKey="nMaxWidth"		sValue="300"		/>
+					
+					<node sName="farm">
+						<var sKey="sDrawClassName"			sValue="Widgets.View.TextFields.DialogTitleBarFarm" />
+					</node>
+				</node>
+				
+				<!-- spacer -->
+				<node sName="spacer">
+					<var sKey="sDrawClassName"			sValue="ignored" />
+					<var sKey="nPixels"					sValue="10"		/>
+					
+					<node sName="farm">
+					</node>
+				</node>
+				
+				<!-- Buttons **Group** -->	
+				<node sName="buttons">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Buttons.ButtonGroup" />
+					<var sKey="rtMargin"	sValue="top:15,left:0,right:0,bottom:10"	/>
+					<var sKey="rtPadding"	sValue="top:0,left:0,right:0,bottom:0"	/>
+					<var sKey="nHeight"		sValue="32"		/>
+					
+					<node sName="farm">
+					</node>
+				</node>
+				
+				<!-- Button -->	
+				<node sName="button">
+					<var sKey="sDrawClassName"			sValue="Widgets.View.Buttons.ButtonBase" />
+					
+					<var sKey="nHeight"		sValue="32"		/>
+					<var sKey="nWidth"		sValue="-1"		/>
+					<var sKey="rtMargin"	sValue="top:0,left:0,right:0,bottom:0"	/>
+					<var sKey="rtPadding"	sValue="top:0,left:15,right:15,bottom:0"	/>
+					<var sKey="bDrawShadow"	sValue="false"	/>
+					
+					<node sName="farm">
+						<var sKey="ptTextNudge"			sValue="0,3"		/>
+						<var sKey="uTextColor"			sValue="#FFFFFF"	/>
+						<var sKey="nTextSize"			sValue="20.0"	/>
+						
+						<var sKey="nCornerRadius"		sValue="6"	/>
+						<var sKey="nStrokeThickness"	sValue="1.5"	/>
+	
+						<node sName="confirm">
+							<node sName="shadow">
+								<var sKey="uColor"			sValue="#23172D"	/>
+								<var sKey="uStrokeColor"	sValue="#23172D"	/>
+							</node>
+							<node sName="out">
+								<var sKey="uColor"			sValue="#94BC41"	/>
+								<var sKey="uStrokeColor"	sValue="#365A36"	/>
+							</node>
+							<node sName="over">
+								<var sKey="uColor"			sValue="#94BC41"	/>
+								<var sKey="uStrokeColor"	sValue="#365A36"	/>
+								<var sKey="nScale"			sValue="1.1"		/>
+							</node>
+							<node sName="down">
+								<var sKey="uColor"			sValue="#94BC41"	/>
+								<var sKey="uStrokeColor"	sValue="#365A36"	/>
+							</node>
+							<node sName="disabled">
+								<var sKey="uColor"			sValue="#999999"	/>
+								<var sKey="uStrokeColor"	sValue="#666666"	/>
+							</node>
+						</node>
+						<node sName="info">
+							<node sName="shadow">
+								<var sKey="uColor"			sValue="#23172D"	/>
+								<var sKey="uStrokeColor"	sValue="#23172D"	/>
+							</node>
+							<node sName="out">
+								<var sKey="uColor"			sValue="#007FFF"	/>
+								<var sKey="uStrokeColor"	sValue="#104E8B"	/>
+							</node>
+							<node sName="over">
+								<var sKey="uColor"			sValue="#007FFF"	/>
+								<var sKey="uStrokeColor"	sValue="#104E8B"	/>
+								<var sKey="nScale"			sValue="1.1"		/>
+							</node>
+							<node sName="down">
+								<var sKey="uColor"			sValue="#007FFF"	/>
+								<var sKey="uStrokeColor"	sValue="#104E8B"	/>
+							</node>
+							<node sName="disabled">
+								<var sKey="uColor"			sValue="#999999"	/>
+								<var sKey="uStrokeColor"	sValue="#666666"	/>
+							</node>
+						</node>
+						
+						<node sName="cancel">
+							<node sName="shadow">
+								<var sKey="uColor"			sValue="#23172D"	/>
+								<var sKey="uStrokeColor"	sValue="#23172D"	/>
+							</node>
+							<node sName="out">
+								<var sKey="uColor"			sValue="#C3463A"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+							</node>
+							<node sName="over">
+								<var sKey="uColor"			sValue="#EA1515"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+								<var sKey="nScale"			sValue="1.1"	/>
+							</node>
+							<node sName="down">
+								<var sKey="uColor"			sValue="#FF0000"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+							</node>
+							<node sName="disabled">
+								<var sKey="uColor"			sValue="#999999"	/>
+								<var sKey="uStrokeColor"	sValue="#666666"	/>
+							</node>
+						</node>
+						<node sName="optional">
+							<node sName="shadow">
+								<var sKey="uColor"			sValue="#23172D"	/>
+								<var sKey="uStrokeColor"	sValue="#23172D"	/>
+							</node>
+							<node sName="out">
+								<var sKey="uColor"			sValue="#999999"	/>
+								<var sKey="uStrokeColor"	sValue="#666666"	/>
+							</node>
+							<node sName="over">
+								<var sKey="uColor"			sValue="#C3C3C3"	/>
+								<var sKey="uStrokeColor"	sValue="#8F8F8F"	/>
+								<var sKey="nScale"			sValue="1.1"	/>
+							</node>
+							<node sName="down">
+								<var sKey="uColor"			sValue="#C3C3C3"	/>
+								<var sKey="uStrokeColor"	sValue="#8F8F8F"	/>
+							</node>
+							<node sName="disabled">
+								<var sKey="uColor"			sValue="#46B754"	/>
+								<var sKey="uStrokeColor"	sValue="#256E46"	/>
+							</node>
+						</node>
+						<node sName="xbutton">
+							<var sKey="sDrawClassName"		sValue="Widgets.View.Buttons.DialogXButtonBase" />
+							<var sKey="nTextSize"			sValue="8"	/>
+							<var sKey="ptTextNudge"			sValue="0,0"	/>
+							<var sKey="x"					sValue="-25"	/>							
+							<var sKey="y"					sValue="25"		/>							
+							<var sKey="sText"				sValue=""		/>
+							<var sKey="bVisible"			sValue="true"	/>
+							<var sKey="nHeight"				sValue="30"		/>
+							<var sKey="nWidth"				sValue="30"		/>
+							<var sKey="ptTextNudge"			sValue="0,1"	/>
+							<var sKey="nPixels"				sValue="4"		/>
+							
+							<node sName="shadow">
+								<var sKey="uColor"			sValue="#23172D"	/>
+								<var sKey="uStrokeColor"	sValue="#23172D"	/>
+							</node>
+							<node sName="out">
+								<var sKey="uColor"			sValue="#C3463A"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+							</node>
+							<node sName="over">
+								<var sKey="uColor"			sValue="#EA1515"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+								<var sKey="nScale"			sValue="1.1"	/>
+							</node>
+							<node sName="down">
+								<var sKey="uColor"			sValue="#FF0000"	/>
+								<var sKey="uStrokeColor"	sValue="#933032"	/>
+							</node>
+							<node sName="disabled">
+								<var sKey="uColor"			sValue="#999999"	/>
+								<var sKey="uStrokeColor"	sValue="#666666"	/>
+							</node>
+						</node>
+					</node>
+					
+					
+				</node>
+				
+			</node>
+		</node>
+	
+	</ExtendableData>
+
+	<dialogTemplates aStyles="dialog:base.dialog.bg.farm,content:base.dialog.content_box.farm,spacer:base.dialog.spacer.farm,titlebar:base.dialog.titlebar.farm,buttons:base.dialog.buttons.farm,button:base.dialog.button.farm,xbutton:base.dialog.button.farm.xbutton,image:base.dialog.image.farm,swf:base.dialog.swf.farm,text:base.dialog.text.farm">
+	
+	
+		<dialog sName="GenericXMLDialog" nWidth="{0}" bXButton="{1}">
+		<!-- this uses GenericXMLDialog.as, it's REALLY handy, however DON'T CHANGE THIS XML -->
+			<titlebar bVisible="{2}" sTitle="{3}"  />
+			<content>
+				<text bVisible="{4}" sStyle="{16}">{5}</text>
+				<image bVisible="{6}" nWidth="{7}" nHeight="{8}" sUrl="{9}"  />
+				<text bVisible="{10}">{11}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	bVisible="{12}"	sText="{13}"	sStyle=".confirm"	 />
+				<button sName="cancel_bt"	bVisible="{14}"	sText="{15}"	sStyle=".cancel"	 />
+			</buttons>
+		</dialog>			
+		
+		<dialog sName="RewardCreditsBuildingFeedPrompt" nWidth="{0}" bXButton="{1}">
+			<titlebar bVisible="{2}" sTitle="{3}"  />
+			<content>
+				<text bVisible="{4}" sStyle="{16}">{5}</text>
+				<image bVisible="{6}" nWidth="{7}" nHeight="{8}" sUrl="{9}"  />
+				<text bVisible="{10}">{11}</text>
+				<spacer nPixels="-20"/>		
+				<spacer nPixels="40"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	bVisible="{12}"	sText="{13}"	rtPadding="top:0,left:30,right:30,bottom:0" sStyle=".confirm"	 />
+				<button sName="cancel_bt"	bVisible="{14}"	sText="{15}"	sStyle=".cancel"	 />
+			</buttons>
+		</dialog>			
+
+		<dialog sName="BuildingReprompt" nWidth="{0}" bXButton="true">
+			<titlebar sTitle="{1}" y="16" />
+			<content>
+				<spacer nPixels="10"/>		
+				<image sType="inline" sUrl="{2}" nWidth="{3}" nHeight="{4}" /> 
+				<text>{5}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{6}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>
+			<spacer nPixels="5"/>		
+		</dialog>
+		
+		<dialog sName="GenericMedPopUp" nWidth="415" sTitle="{0}" bXButton="{1}">
+			<content>
+				<text>{2}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="{4}" />
+				<button sName="cancel_bt"	sText="{5}"	sStyle=".cancel"		bVisible="{6}" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+			
+		<dialog sName="GenericLrgPopUp" nWidth="590" sTitle="{0}" bXButton="{1}">
+			<content>
+				<text>{2}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="{4}" />
+				<button sName="cancel_bt"	sText="{5}"	sStyle=".cancel"		bVisible="{6}" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+			
+		<dialog sName="WhatIsThisMedPopUp" nWidth="415" bXButton="{1}">
+			<titlebar sTitle="{0}"  />
+			<content>
+		
+				<spacer nPixels="10"/>
+				<image nHeight="100" nWidth="100" sUrl="{2}" />
+				<text>{3}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{4}"	sStyle=".confirm"	bVisible="{5}" nWidth="125" />
+				<button sName="cancel_bt"	sText="{6}"	sStyle=".cancel"	bVisible="{7}" nWidth="125" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+<!--
+Tractor,true,assets/equipment/equip_tractor_icon.png,Till your soil in no time! Use a Tractor to plow 4 plots at a time and zip through your farm work!<br><br>Tractors use fuel when plowing.,BUY,true,Cancel,true
+-->
+
+			
+		<dialog sName="WhatIsThisLrgPopUp" nWidth="590" sTitle="{0}" bXButton="{1}">
+			<content>
+				<spacer nPixels="10"/>		
+				<image nHeight="100" nWidth="100" sUrl="{2}" />
+				<text>{3}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{4}"	sStyle=".confirm"	bVisible="{5}" nWidth="125" />
+				<button sName="cancel_bt"	sText="{6}"	sStyle=".cancel"		bVisible="{7}" nWidth="125" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+	
+	
+		<dialog sName="exampleSmall" nWidth="320" bXButton="true">
+			<content>
+				<text sStyle=".h1">Lorem ipsum dolor sit amet, consectetur </text>
+				<text sStyle=".small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim neque ut</text>
+			</content>
+			<buttons>
+				<button sName="share_bt"			sText="Share!"			nWidth="143" />
+				<button sName="skip_bt"			sText="Skip"				nWidth="107"	sStyle="optional"	 />
+			</buttons>
+		</dialog>
+			
+			
+			
+		<dialog sName="exampleMed" nWidth="415" sTitle="Simple Dialog" bXButton="true">
+			<content>
+				<text sStyle=".h1">this is h1</text>
+				<image sType="inline" nHeight="100" nWidth="100" sUrl="hud/FV_questionIcon_100x100.png"/>
+				<text>this is body text.<br/>use &#60;br/&#62; tag to force a new line</text>
+				<text sStyle=".h2">TODO: change xml to comment in and out buttons you want or don\'t want.</text>
+				<spacer nPixels="-10"/>
+				<image sType="float" x="22" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<image sType="float" x="360" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<spacer nPixels="20"/>		
+			</content>
+			<buttons>
+		<!--		<button sName="add_neighbors_bt"	sText="Add Neighbors" /> -->
+		<!--		<button sName="ok_bt"				sText="OK"				nWidth="143" /> -->
+				<button sName="share_bt"			sText="Share"			nWidth="143" />
+		<!--				<button sName="accept_bt"			sText="Accept"			nWidth="143" /> -->
+		<!--				<button sName="prev_bt"				sText="Prev"				nWidth="143"	sStyle=".cancel" 	/> -->
+				<button sName="skip_bt"				sText="Skip"				nWidth="107"	sStyle="optional"	 />
+		<!--				<button sName="next_bt"				sText="Next"				nWidth="143" /> -->
+		<!--				<button sName="cancel_bt"			sText="Cancel"			nWidth="143"	sStyle=".cancel" /> -->
+			</buttons>
+		</dialog>
+			
+	
+		<dialog sName="exampleLarge" nWidth="590" sTitle="Simple Dialog" bXButton="true">
+			<content>
+				<text sStyle=".h1">this is h1</text>
+				<image sType="inline" nHeight="100" nWidth="100" sUrl="hud/FV_questionIcon_100x100.png"/>
+				<text>this is body text.<br/>use &#60;br/&#62; tag to force a new line</text>
+				<text sStyle=".h2">TODO: change xml to comment in and out buttons you want or don\'t want.</text>
+				<spacer nPixels="-10"/>
+				<image sType="float" x="22" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<image sType="float" x="535" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<spacer nPixels="20"/>		
+			</content>
+			<buttons>
+		<!--		<button sName="add_neighbors_bt"	sText="Add Neighbors" /> -->
+		<!--		<button sName="ok_bt"				sText="OK"				nWidth="143" /> -->
+				<button sName="share_bt"			sText="Share"			nWidth="143" />
+		<!--				<button sName="accept_bt"			sText="Accept"			nWidth="143" /> -->
+		<!--				<button sName="prev_bt"				sText="Prev"				nWidth="143"	sStyle=".cancel" 	/> -->
+				<button sName="skip_bt"				sText="Skip"				nWidth="107"	sStyle="optional"	 />
+		<!--				<button sName="next_bt"				sText="Next"				nWidth="143" /> -->
+		<!--				<button sName="cancel_bt"			sText="Cancel"			nWidth="143"	sStyle=".cancel" /> -->
+			</buttons>
+		</dialog>
+	
+		<dialog sName="exampleComplex" nWidth="590" sTitle="Complex Dialog w/var {0}" bXButton="true">
+			<content>
+				<spacer nPixels="10"/>		
+				<text>note image layering above.</text>
+				<spacer nPixels="-10"/>		
+				<image sType="inline" nHeight="100" nWidth="100" sUrl="hud/FV_questionIcon_100x100.png"/>
+				<spacer nPixels="-15"/>		
+				<text>this is body text with a variable: {1}<br/>use &#60;br/&#62; tag to force a new line</text>
+					<text x="350" nWidth="100" sAlign="left" sStyle=".h2">{3}</text>
+					<spacer nPixels="-33"/>
+					<image x="250" nWidth="27" nHeight="25" sUrl="hud/FV_Main_Options_Music_Normal.png" />
+					<spacer nPixels="12"/>
+				<spacer nPixels="-10"/>
+				<image sType="float" x="22" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<image sType="float" x="535" nHeight="50" nWidth="50" sUrl="hud/Unwither_icon.png" />
+				<spacer nPixels="20"/>		
+			</content>
+			<buttons>
+				<button sName="some_text_bt"		sText="Some Text"								/>
+				<button sName="skip_bt"				sText="var {2}"			sStyle="optional" 	/>
+			</buttons>
+			<spacer nPixels="-10" />
+			<buttons>
+				<button sName="ok_bt"				sText="OK"				nWidth="143" />
+				<button sName="cancel_bt"			sText="Cancel"			nWidth="143"	sStyle=".cancel" 	/>
+			</buttons>
+		<!--	<spacer nPixels="-10" />
+			<buttons>
+				<button sName="share_bt"			sText="Share"			nWidth="143" />
+				<button sName="skip_bt"				sText="Skip"				nWidth="107"	sStyle=".optional" 	/>
+			</buttons>
+		-->
+		<!--	<spacer nPixels="-10" />
+			<buttons>
+				<button sName="prev_bt"				sText="Prev"				nWidth="143"	sStyle=".cancel" 	/>
+				<button sName="next_bt"				sText="Next"				nWidth="143"					/>
+			</buttons>
+		-->
+			<image sType="float" sLayer="top" x="-20" y="-50" nHeight="100" nWidth="100" sUrl="hud/FV_Main_Fertilizer_Icon_100.png" />
+			<image sType="float" y="-50" nHeight="100" nWidth="100" sUrl="hud/FV_Main_Fertilizer_Icon_100.png" />
+			<image sType="float" sLayer="bg" x="550" y="-50" nHeight="100" nWidth="100" sUrl="hud/FV_Main_Fertilizer_Icon_100.png" />
+		</dialog>
+	
+					
+		<dialog sName="exampleAdvancedText" nWidth="415" >
+			<titlebar sTitle="Advanced Text!"  />
+			<content>
+				<spacer nPixels="10"/>
+				<image sType="inline" x="75" nHeight="100" nWidth="100" sUrl="assets/hud/FV_questionIcon_100x100.png"/>
+				<spacer nPixels="-100"/>
+				<text x="280" nWidth="130">This text is offset and wraps based on width!</text>
+				<spacer nPixels="10"/>
+				<text sStyle=".h1">OMG! I Love xmlDialogs!</text>
+				<text sType="float" sAlign="left" x="130" nWidth="130">This text is LEFT aligned and wraps!</text>
+				<text sAlign="right" x="280" nWidth="130">This text is RIGHT aligned and wraps!</text>
+				<spacer nPixels="10"/>
+				<text sAlign="justify" nWidth="180" sStyle=".small">Holy Crap!! can you believe that this text is JUSTIFIED?!  That's like getting a <font color="#dd0000">cherry</font> on top of your ice cream!!</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="share_bt" sText="Share" nWidth="143" sStyle=".confirm"	/>
+				<button sName="skip_bt" sText="Skip" nWidth="107" sStyle=".optional" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+
+		
+		<dialog sName="exampleImagesAndSwfsWithLinkage" nWidth="615" bXButton="true">
+			<titlebar sTitle="Images &amp; Swfs"  />
+			<content>
+		
+				<swf sType="float"	x="70"	xScale=".5" yScale=".5" nHeight="100" nWidth="250" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_construct_0" />
+				<swf sType="float"	x="230"	xScale=".5" yScale=".5" nHeight="100" nWidth="250" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_construct_1" />
+				<swf 				x="390"	xScale=".5" yScale=".5" nHeight="100" nWidth="250" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_built_0" />
+				<swf sType="float"	x="70"	xScale=".5" yScale=".5" nHeight="100" nWidth="150" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_built_1" />
+				<swf sType="float"	x="230"	xScale=".5" yScale=".5" nHeight="100" nWidth="150" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_built_2" />
+				<swf 				x="390" xScale=".5" yScale=".5" nHeight="100" nWidth="150" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_built_3" />
+				<swf 				x="230"	xScale=".5" yScale=".5" nHeight="100" nWidth="150" sUrl="assets/buildings/bldg_pigpen.swf" sLinkage="pigpen_built_4" />
+				
+				<spacer nPixels="-10"/>
+				<image sType="float" x="40" nHeight="50" nWidth="50" sUrl="assets/animals/duck.swf" />
+				<image sType="float" xScale="-1" x="580" nHeight="50" nWidth="50" sUrl="assets/animals/duck.swf" />
+				<spacer nPixels="30"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="cool!!"	sStyle=".confirm"	bVisible="true" nWidth="125" />
+				<button sName="cancel_bt"	sText="what'ev"	sStyle=".cancel"	bVisible="true" nWidth="125" />
+			</buttons>
+			<spacer nPixels="15"/>		
+			<image sType="float" sLayer="top" x="100" y="-50" nHeight="100" nWidth="100" sUrl="assets/hud/FV_Main_Fertilizer_Icon_100.png" />
+			<image sType="float" y="-50" nHeight="100" nWidth="100" sUrl="assets/hud/FV_Main_Fertilizer_Icon_100.png" />
+			<image sType="float" sLayer="bg" x="400" y="-50" nHeight="100" nWidth="100" sUrl="assets/hud/FV_Main_Fertilizer_Icon_100.png" />
+		</dialog>
+		
+		<dialog sName="FarmersInsuranceOnboard" nWidth="460" sTitle="{0}" bXButton="{1}">
+		<titlebar sTitle="{2}"  />
+			<content>
+				<spacer nPixels="5"/>	
+				<text>{3}</text>
+				<spacer nPixels="5"/>
+				<image nHeight="100" nWidth="100" sUrl="{4}" />
+				<spacer nPixels="5"/>
+				<text>{5}</text>
+				<spacer nPixels="5"/>	
+			</content>
+			<buttons>
+				<button sName="confirm_bt" sText="{6}" sStyle=".confirm" bVisible="{7}" />
+				<button sName="cancel_bt" sText="{8}" sStyle=".cancel" bVisible="{9}" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		
+		<dialog sName="FarmersInsuranceOffboard" nWidth="460" bXButton="{0}">
+			<content>
+				<spacer nPixels="5"/>	
+				<image nHeight="100" nWidth="100" sUrl="{1}" />
+				<spacer nPixels="5"/>
+				<text>{2}</text>
+				<spacer nPixels="5"/>	
+			</content>
+			<buttons>
+				<button sName="confirm_bt" sText="OK" nWidth="143" sStyle=".confirm"	/>
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		
+		<dialog sName="GenericMedPopUpTwoMessage" nWidth="415" sTitle="{0}" bXButton="{1}">
+			<content>
+				<spacer nPixels="5"/>
+				<text>{2}</text>
+				<spacer nPixels="10"/>
+				<text>{3}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{4}"	sStyle=".confirm" bVisible="{5}" />
+				<button sName="cancel_bt"	sText="{6}"	sStyle=".cancel" bVisible="{7}" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		<dialog sName="RevokeClothingRefund" nWidth="500" bXButton="false">
+			<spacer nPixels="5"/>	
+			<text uTextColor="#663300" nTextSize="30">{1}</text>
+			<image nHeight="221" nWidth="449" sUrl="{0}" />
+			<content rtMargin="top:16,left:27,right:27,bottom:0">
+				<spacer nPixels="10"/>		
+				<text>{2}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="Okay"	sStyle=".confirm"	bVisible="true" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		<dialog sName="ClothesOnboard" nWidth="500" bXButton="false">
+			<spacer nPixels="5"/>	
+			<text uTextColor="#663300" nTextSize="30">{1}</text>
+			<image nHeight="221" nWidth="449" sUrl="{0}" />
+			<content rtMargin="top:16,left:27,right:27,bottom:0">
+				<spacer nPixels="10"/>		
+				<text>{2}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="Okay"	sStyle=".confirm"	bVisible="true" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		<dialog sName="ClothesOffboard" nWidth="378" bXButton="false">
+			<spacer nPixels="10"/>	
+			<image nHeight="234" nWidth="328"  sUrl="{0}" />
+			<content rtMargin="top:16,left:25,right:25,bottom:0">	
+				<spacer nPixels="10"/>		
+				<text>{1}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="Okay"	sStyle=".confirm"	bVisible="true" />
+			</buttons>
+			<spacer nPixels="15"/>		
+		</dialog>
+		<dialog sName="MotdNormal" nWidth="420" bXButton="false">
+			<spacer nPixels="5"/>	
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<spacer nPixels="10"/>	
+				<image nHeight="100" nWidth="100" sUrl="{0}"/>	
+				<spacer nPixels="10"/>		
+				<text>{1}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="Okay"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdTitleWide" nWidth="590" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="480" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:10,left:10,right:10,bottom:0">
+				<spacer nPixels="10"/>
+				<image nHeight="169" nWidth="492"  sUrl="{0}"/>	
+				<spacer nPixels="10"/>		
+				<text>{1}</text>
+				<spacer nPixels="10"/>		
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+        <dialog sName="MotdTitleMediumNoText" nWidth="488" bXButton="false">
+            <titlebar sTitle="{2}" nTextSize="24" nMaxWidth="448" rtPadding="top:0,left:20,right:20,bottom:0"/>
+            <spacer nPixels="10"/>
+            <spacer nPixels="10"/>
+            <content rtMargin="top:0,left:20,right:20,bottom:0">
+                <text>{1}</text>
+                <spacer nPixels="10"/>
+            </content>
+            <buttons>
+                <button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+            </buttons>
+        </dialog>
+        <dialog sName="MotdTitleMedium" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="448" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdTitleMediumWithX" nWidth="512" bXButton="true">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="472" rtPadding="top:0,left:10,right:10,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="472" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+				<button sName="info_bt"	sText="{4}"	sStyle=".info"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdTitleMediumWithXNoInfo" nWidth="512" bXButton="true">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="472" rtPadding="top:0,left:10,right:10,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="472" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>
+		</dialog>
+		<dialog sName="MotdBuildableOnboard" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<image nHeight="214" nWidth="448"  sUrl="{0}"/>	
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+				<button sName="cancel_bt"	sText="{4}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		
+		<dialog sName="MotdBuildableOnboardNoCancel" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>		
+			<image nHeight="170" nWidth="448" sUrl="{0}"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		
+		<dialog sName="MotdBuildableOnboardNoCancelNoTitle" nWidth="500" bXButton="false">
+			<spacer nPixels="-5"/>
+			<image sType="float" x="5" nHeight="350" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="350"/>
+			<content>
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{2}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdBuildableOnboardNoCancelNoTitleWithX" nWidth="500" bXButton="true">
+			<spacer nPixels="-5"/>
+			<image sType="float" x="5" nHeight="350" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="350"/>
+			<content>
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{2}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		
+		<dialog sName="MotdCurrencyEducation" nWidth="611" bXButton="true">
+			<spacer nPixels="-10"/>
+			<image sType="float" x="5" nHeight="399" nWidth="601" sUrl="{0}"/>
+			<spacer nPixels="400"/>
+			<buttons>
+				<button sName="confirm_bt"	sText="{1}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		
+		<dialog sName="MotdAnimalBreeding" nWidth="530" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="480" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>		
+			<image nHeight="170" nWidth="448" sUrl="{0}"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="CompletionCongratsScreen" nWidth="400" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<image nHeight="100" nWidth="100"  sUrl="{0}"/>	
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+				<button sName="cancel_bt"	sText="{4}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		
+		<dialog sName="CompletionCongratsOkayScreen" nWidth="400" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<image nHeight="100" nWidth="100"  sUrl="{0}"/>	
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="Motdspringbasket2011" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="214" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="motd_BaseDialog" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="11"/>
+			<image nHeight="155" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="11"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+				<button sName="cancel_bt"	bVisible="true"	sText="{4}"	sStyle=".cancel"	 />
+			</buttons>	
+		</dialog>
+		<dialog sName="motd_BaseDialog_with_close_btn" nWidth="488" bXButton="true">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="11"/>
+			<image nHeight="155" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="11"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+				<button sName="cancel_bt"	bVisible="true"	sText="{4}"	sStyle=".cancel"	 />
+			</buttons>
+		</dialog>
+        <dialog sName="MotdZCache" nWidth="488" bXButton="true">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="385" rtPadding="top:5,left:20,right:20,bottom:5"/>
+			<spacer nPixels="11"/>
+			<image nHeight="205" nWidth="448" sUrl="{0}" />
+			<spacer nPixels="11"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>
+        <dialog sName="MotdFlashUpgrade" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="385" rtPadding="top:5,left:20,right:20,bottom:5"/>
+			<spacer nPixels="11"/>
+			<image nHeight="205" nWidth="448" sUrl="{0}" />
+			<spacer nPixels="11"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>
+
+        <dialog sName="CIPStarterPack" nWidth="488" bXButton="true">
+			<titlebar sTitle="{2}" nTextSize="24" nMaxWidth="385" rtPadding="top:5,left:20,right:20,bottom:5"/>
+			<spacer nPixels="11"/>
+			<image nHeight="205" nWidth="448" sUrl="{0}" />
+			<spacer nPixels="11"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>
+
+
+        <dialog sName="MotdCommunityNeighbors" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="214" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="2"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdDucklingReactivation" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt" sText="{3}" sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>
+		
+		<dialog sName="Offboardingwishingwell" nWidth="528" bXButton="true">
+			<titlebar nTextSize="28" sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:50,right:50,bottom:0"/>
+			<spacer nPixels="-61"/>
+			<image sLayer="top" x="37" nHeight="61" nWidth="52" sUrl="{4}"/>
+			<spacer nPixels="10"/>
+			<image nHeight="214" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="-20"/>
+			<content rtMargin="top:0,left:40,right:40,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+
+		<dialog sName="FTUE_AddNeighbors" nWidth="488" bXButton="false">
+			<titlebar sTitle="{0}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="448" sUrl="{1}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{2}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt" sText="{3}" sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>
+		<dialog sName="AmexSocialCurrencyDialog" nWidth="488" bXButton="true">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+
+        <dialog sName="WorldScoreWhatIsThis" nWidth="488" bXButton="false">
+            <titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+            <spacer nPixels="5"/>
+            <image nHeight="400" nWidth="448" sUrl="{0}"/>
+            <spacer nPixels="5"/>
+            <content rtMargin="top:0,left:20,right:20,bottom:0">
+                <text>{1}</text>
+            </content>
+            <buttons>
+                <button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+            </buttons>
+        </dialog>
+		<!-- Project Unicorn MOTD,
+			uses specific, non-standard, farm styles 
+			SO DON'T COPY/PASTE FROM THIS ENTRY. 
+		-->
+		<dialog sName="UniMOTD" nWidth="488" bXButton="true" sStyle="base.dialog.bg">
+
+			<!-- Background -->
+			<image nWidth="491" nHeight="428" sLayer="bg" sUrl="assets/dialogs/4d_elements/unicorn/uni_onboarding_bg.png"/>
+
+			<!-- Floating Gagaville Logo -->
+			<spacer nPixels="-480"/> 
+			<image nWidth="312" nHeight="107" sUrl="assets/dialogs/4d_elements/unicorn/uni_Logo.png"/>
+			
+			<!-- Avatar Image -->
+			<spacer nPixels="10"/>
+			<image nWidth="448" nHeight="156" sUrl="{0}"/>
+			
+			<!-- Text Box -->
+			<spacer nPixels="10"/>
+			<content sStyle="base.dialog.content_box.uni_farm" rtMargin="top:0,left:20,right:20,bottom:0">
+				<text sStyle="base.dialog.text.uni_farm">{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			
+			<!-- Confirmation Button -->
+			<buttons>
+				<button sName="confirm_bt"	sText="{2}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+			
+		</dialog>
+		<dialog sName="MOTDGeneric_214x448" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="214" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MOTDGeneric_156x448" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="156" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MOTDCityXPromo" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:20,right:20,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="170" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+				<spacer nPixels="10"/>
+			</content>
+			<buttons>
+				<button sName="confirm_bt"	sText="{3}"	sStyle=".confirm"	bVisible="true" />
+			</buttons>	
+		</dialog>
+		<dialog sName="MotdDuckulasCastle" nWidth="488" bXButton="false">
+			<titlebar sTitle="{2}" nMaxWidth="415" rtPadding="top:0,left:4,right:4,bottom:0"/>
+			<spacer nPixels="10"/>
+			<image nHeight="170" nWidth="448" sUrl="{0}"/>
+			<spacer nPixels="10"/>
+			<content rtMargin="top:0,left:20,right:20,bottom:0">
+				<text>{1}</text>
+			</content>
+			<buttons>
+				<button sName="confirm_bt" sText="{3}" sStyle=".confirm" bVisible="true" />
+			</buttons>
+		</dialog>	
+
+	</dialogTemplates>
+	<!-- note: never make a second dialogTemplates tag -->
+</dialogs>

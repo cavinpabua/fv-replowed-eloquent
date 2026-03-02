@@ -1,0 +1,79 @@
+img.feedImage { height:80px;width:80px;border:0}
+img.feedProfileImage { height:35px; width:35px}
+
+
+div.zfeed_container {
+	border: 1px black solid;
+	-moz-border-radius: 8px 8px 8px 8px;
+  	-webkit-border-radius:8px 8px 8px 8px;   
+  	border-color:#CCCCCC;
+	width:495px;
+}
+
+div.zfeednav {
+	width:495px; height: 35px;
+	position:relative;
+	padding-top:5px;
+	padding-left:6px;
+	margin-bottom:-18px;
+}
+
+div.zfeednav_tab {
+	width: 120px;
+	height: 30px;
+	display: inline-block;
+	text-align:center;
+	font-size:12px;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	padding-top: 5px;
+}
+
+div.zfeednav_tab a:hover {text-decoration:none;}
+
+div.zfeednav_active {
+	background: url('//zynga1-a.akamaihd.net/farmville/webassets/images/v854054/webassets/images/zfeednavbg.jpg') top left no-repeat;
+	color: white;
+}
+
+div.zfeed_innerContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+	display:none;
+}
+div.zfeed_widget { width:495px; }
+
+div.feed {background-color: #FFFFFF; height: 95px; width:495px; margin-top:1px; font-family:"lucida grande",tahoma,verdana,arial,sans-serif;overflow:hidden;}
+div.feedInner { margin-left: 5px; margin-right: 5px;padding-top: 3px; border-bottom:1px solid #CCCCCC;height:90px}
+div.feedPaddingLeft {}
+div.feedImage {width: 90px; text-align:center; margin-top: 3px}
+div.feedBody { width:370px; margin-top: -3px;}
+div.feedBodyTop {margin-top:10px;}
+div.feedProfileImage {width:60px; text-align:center}
+div.feedBodyContent {width:300px;}
+div.feedUserName {font-size:11px;font-weight:bold;}
+div.feedTitle {font-size:11px;font-weight:bold;}
+div.feedText {}
+div.feedUserMessage {}
+div.feedCtaWrapper { height: 37px; width: 245px}
+div.feedBodyBottom { height: 45px }
+div.feedCTAs {margin-top:5px; margin-left:10px}
+div.feedGameIcon {height:19;width:19}
+div.feedLink {margin-top:1px;margin-left: 10px; font-size:12px}
+div.feedFooter {}
+div.feedPostTime {color:#999999; font-size:11px; margin-left: 12px}
+div.feedPersonIcon {}
+div.feedCompletionStatus {margin-top:-3px; margin-left:-150px; font-size:11px;font-weight:bold;height: 46px; width: 275px;}
+div.feedPaddingRight {}
+div.feedStatusText {margin-top:9px; margin-left: 150px; margin-right:5px; width: 81px; text-align:right; height: 15px}
+div.feedStatusIcon { height: 34px; width: 34px;margin-left:3px }
+div.feedExternalGameName { height:12px; text-align:right; margin-top:-6px; margin-left: 70px; margin-right: 6px; display:none;font-size:11px;font-weight:bold; width: 200px}
+div.feedMore { text-align:center; display:none; margin-top:10px; }
+div.feedLoading { text-align:center; margin-top:15px; margin-bottom:12px;  width:495px;}
+
+span.feedActivityLabel { color:#3B5998; font-size: 14px; font-weight: bold; font-family:"lucida grande",tahoma,verdana,arial,sans-serif; }	
+ul.zfeeds { list-style-type:none }
+
+a:link {text-decoration: none }
+a:visited {text-decoration: none; color: #3B5998 }
+a:active {text-decoration: none }
+a:hover {text-decoration: underline }

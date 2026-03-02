@@ -1,0 +1,11 @@
+{
+    "name": "gravity-ac/amfphp-custom",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gravity-ac/amfphp-custom"
+        }
+    ],
+    "autoload": {
+    "files": ["Amfphp/ClassLoader.php"]
+}
